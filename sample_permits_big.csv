@@ -1,0 +1,501 @@
+Permit #,County,City,ZIP,Status,Permit Type,Project Description,Issue Date,Expiration Date,Owner Name,Owner Phone,Owner Email,Contractor,Contractor License,Valuation ($)
+P-2025-00001,Sacramento,Rocklin,95328,In Progress,Building,Tear-off and replace roof,11/01/2024,11/01/2025,Owner 1,(954) 304-9935,owner1@example.com,Contractor 6,921208,5000
+P-2025-00002,Placer,Colfax,95716,Issued,Building,New roof covering,09/09/2025,09/09/2026,Owner 2,(774) 403-9928,owner2@example.com,Contractor 27,815574,15000
+P-2025-00003,Placer,Sacramento,95448,Finaled,Electrical,Tear-off and replace roof,11/27/2024,11/27/2025,Owner 3,(359) 420-6514,owner3@example.com,Contractor 7,748625,15000
+P-2025-00004,Sacramento,Auburn,95847,Expired,Electrical,New HVAC install,08/06/2025,08/06/2026,Owner 4,(749) 327-7201,owner4@example.com,Contractor 6,989428,12000
+P-2025-00005,Placer,Grass Valley,95146,In Progress,Mechanical,New HVAC install,11/07/2024,11/07/2025,Owner 5,(991) 496-2307,owner5@example.com,Contractor 15,752953,15000
+P-2025-00006,Sacramento,Nevada City,95479,Finaled,Plumbing,Garage conversion,05/05/2025,05/05/2026,Owner 6,(414) 886-5374,owner6@example.com,Contractor 45,737435,25000
+P-2025-00007,Placer,Nevada City,95573,Expired,Roofing,Foundation repair,11/03/2024,11/03/2025,Owner 7,(476) 855-4598,owner7@example.com,Contractor 44,870017,60000
+P-2025-00008,Sacramento,Sacramento,95374,Issued,Roofing,Tear-off and replace roof,08/27/2025,08/27/2026,Owner 8,(416) 780-6155,owner8@example.com,Contractor 14,961740,15000
+P-2025-00009,Sacramento,Nevada City,95352,Finaled,Plumbing,Bathroom remodel,10/30/2024,10/30/2025,Owner 9,(964) 798-8019,owner9@example.com,Contractor 38,909400,12000
+P-2025-00010,Yuba,Grass Valley,95873,Issued,Roofing,Foundation repair,06/04/2025,06/04/2026,Owner 10,(312) 356-3621,owner10@example.com,Contractor 44,921333,25000
+P-2025-00011,Yuba,Colfax,95357,Issued,Plumbing,Re-roof with shingles,08/23/2025,08/23/2026,Owner 11,(896) 938-2876,owner11@example.com,Contractor 44,981527,60000
+P-2025-00012,Sacramento,Sacramento,95261,Expired,Electrical,Kitchen remodel,05/11/2025,05/11/2026,Owner 12,(203) 939-5315,owner12@example.com,Contractor 33,793665,25000
+P-2025-00013,Placer,Nevada City,95482,In Progress,Electrical,Garage conversion,08/01/2025,08/01/2026,Owner 13,(752) 997-9689,owner13@example.com,Contractor 1,869951,15000
+P-2025-00014,Sacramento,Rocklin,95159,In Progress,Building,New HVAC install,09/15/2025,09/15/2026,Owner 14,(780) 280-2403,owner14@example.com,Contractor 47,954798,60000
+P-2025-00015,Placer,Yuba City,95662,In Progress,Mechanical,Bathroom remodel,08/20/2025,08/20/2026,Owner 15,(471) 740-7932,owner15@example.com,Contractor 14,982746,60000
+P-2025-00016,Yuba,Lincoln,95548,Expired,Roofing,Panel upgrade,10/06/2024,10/06/2025,Owner 16,(323) 453-4681,owner16@example.com,Contractor 5,877254,5000
+P-2025-00017,Placer,Auburn,95172,Issued,Mechanical,New roof covering,11/27/2024,11/27/2025,Owner 17,(434) 269-1514,owner17@example.com,Contractor 22,737149,25000
+P-2025-00018,Yuba,Rocklin,95652,In Progress,Electrical,Garage conversion,05/26/2025,05/26/2026,Owner 18,(940) 784-8744,owner18@example.com,Contractor 16,947974,60000
+P-2025-00019,Nevada,Sacramento,95462,Expired,Roofing,Kitchen remodel,02/28/2025,02/28/2026,Owner 19,(620) 678-1887,owner19@example.com,Contractor 44,751599,5000
+P-2025-00020,Placer,Rocklin,95294,Expired,Electrical,Kitchen remodel,03/02/2025,03/02/2026,Owner 20,(343) 632-4006,owner20@example.com,Contractor 18,942550,8000
+P-2025-00021,Nevada,Auburn,95767,Issued,Plumbing,Foundation repair,08/17/2025,08/17/2026,Owner 21,(295) 971-4872,owner21@example.com,Contractor 11,913078,15000
+P-2025-00022,Nevada,Nevada City,95488,Issued,Roofing,Re-roof with shingles,01/21/2025,01/21/2026,Owner 22,(599) 471-8454,owner22@example.com,Contractor 19,921777,40000
+P-2025-00023,Placer,Roseville,95322,Issued,Plumbing,Bathroom remodel,12/14/2024,12/14/2025,Owner 23,(793) 953-9883,owner23@example.com,Contractor 4,864419,5000
+P-2025-00024,Placer,Auburn,95620,Issued,Mechanical,Solar installation,08/30/2025,08/30/2026,Owner 24,(390) 270-2113,owner24@example.com,Contractor 44,823314,15000
+P-2025-00025,Nevada,Grass Valley,95529,Finaled,Mechanical,New roof covering,07/25/2025,07/25/2026,Owner 25,(467) 409-6147,owner25@example.com,Contractor 16,839258,15000
+P-2025-00026,Sacramento,Grass Valley,95109,Expired,Electrical,Solar installation,07/19/2025,07/19/2026,Owner 26,(836) 776-2638,owner26@example.com,Contractor 5,981875,8000
+P-2025-00027,Sacramento,Grass Valley,95350,Finaled,Electrical,Bathroom remodel,01/08/2025,01/08/2026,Owner 27,(491) 361-8179,owner27@example.com,Contractor 35,858606,25000
+P-2025-00028,Sacramento,Grass Valley,95999,In Progress,Mechanical,Tear-off and replace roof,10/25/2024,10/25/2025,Owner 28,(470) 318-2753,owner28@example.com,Contractor 48,990048,8000
+P-2025-00029,Placer,Lincoln,95308,Finaled,Electrical,Room addition,05/08/2025,05/08/2026,Owner 29,(717) 700-5114,owner29@example.com,Contractor 4,748390,40000
+P-2025-00030,Nevada,Lincoln,95889,In Progress,Electrical,Tear-off and replace roof,02/20/2025,02/20/2026,Owner 30,(852) 468-3647,owner30@example.com,Contractor 48,931649,25000
+P-2025-00031,Nevada,Grass Valley,95177,In Progress,Plumbing,Foundation repair,09/28/2024,09/28/2025,Owner 31,(758) 236-7049,owner31@example.com,Contractor 38,989682,8000
+P-2025-00032,Sacramento,Lincoln,95915,Issued,Roofing,Tear-off and replace roof,02/16/2025,02/16/2026,Owner 32,(566) 415-5088,owner32@example.com,Contractor 43,753893,12000
+P-2025-00033,Placer,Rocklin,95985,In Progress,Plumbing,Room addition,12/12/2024,12/12/2025,Owner 33,(381) 622-1406,owner33@example.com,Contractor 12,874160,60000
+P-2025-00034,Placer,Grass Valley,95491,Issued,Roofing,Panel upgrade,02/26/2025,02/26/2026,Owner 34,(681) 427-4269,owner34@example.com,Contractor 30,883321,12000
+P-2025-00035,Placer,Sacramento,95436,Finaled,Roofing,Tear-off and replace roof,05/31/2025,05/31/2026,Owner 35,(271) 991-5573,owner35@example.com,Contractor 23,967075,15000
+P-2025-00036,Nevada,Grass Valley,95998,Finaled,Mechanical,New HVAC install,10/12/2024,10/12/2025,Owner 36,(382) 794-5349,owner36@example.com,Contractor 3,756834,25000
+P-2025-00037,Yuba,Colfax,95218,Expired,Electrical,New HVAC install,02/14/2025,02/14/2026,Owner 37,(790) 394-5173,owner37@example.com,Contractor 3,928619,5000
+P-2025-00038,Placer,Lincoln,95541,Issued,Mechanical,Garage conversion,01/01/2025,01/01/2026,Owner 38,(880) 538-6143,owner38@example.com,Contractor 43,765339,40000
+P-2025-00039,Yuba,Lincoln,95512,Finaled,Mechanical,Panel upgrade,04/24/2025,04/24/2026,Owner 39,(767) 330-4143,owner39@example.com,Contractor 27,898781,40000
+P-2025-00040,Sacramento,Sacramento,95661,Issued,Mechanical,Room addition,06/27/2025,06/27/2026,Owner 40,(511) 493-4443,owner40@example.com,Contractor 28,868951,15000
+P-2025-00041,Placer,Colfax,95584,In Progress,Plumbing,Garage conversion,02/10/2025,02/10/2026,Owner 41,(874) 286-5649,owner41@example.com,Contractor 33,875735,5000
+P-2025-00042,Placer,Nevada City,95125,Issued,Electrical,New roof covering,05/27/2025,05/27/2026,Owner 42,(450) 686-2193,owner42@example.com,Contractor 30,917286,40000
+P-2025-00043,Yuba,Sacramento,95349,In Progress,Roofing,Re-roof with shingles,12/04/2024,12/04/2025,Owner 43,(871) 904-1090,owner43@example.com,Contractor 49,755882,60000
+P-2025-00044,Yuba,Auburn,95670,In Progress,Roofing,Bathroom remodel,02/19/2025,02/19/2026,Owner 44,(324) 667-3184,owner44@example.com,Contractor 30,978466,25000
+P-2025-00045,Yuba,Colfax,95556,In Progress,Electrical,Solar installation,11/24/2024,11/24/2025,Owner 45,(961) 686-8373,owner45@example.com,Contractor 17,829624,60000
+P-2025-00046,Yuba,Rocklin,95381,Expired,Electrical,Foundation repair,11/02/2024,11/02/2025,Owner 46,(279) 930-5681,owner46@example.com,Contractor 16,842456,12000
+P-2025-00047,Placer,Nevada City,95336,Expired,Mechanical,Kitchen remodel,04/14/2025,04/14/2026,Owner 47,(910) 356-4505,owner47@example.com,Contractor 5,917510,15000
+P-2025-00048,Yuba,Auburn,95311,Expired,Mechanical,Solar installation,04/08/2025,04/08/2026,Owner 48,(598) 988-1320,owner48@example.com,Contractor 49,899429,15000
+P-2025-00049,Yuba,Sacramento,95651,In Progress,Electrical,Panel upgrade,09/21/2025,09/21/2026,Owner 49,(699) 424-5471,owner49@example.com,Contractor 28,954616,5000
+P-2025-00050,Yuba,Nevada City,95960,Expired,Electrical,Garage conversion,03/09/2025,03/09/2026,Owner 50,(330) 837-9751,owner50@example.com,Contractor 2,906580,25000
+P-2025-00051,Yuba,Nevada City,95987,Expired,Building,Kitchen remodel,12/10/2024,12/10/2025,Owner 51,(386) 251-5262,owner51@example.com,Contractor 25,871627,8000
+P-2025-00052,Yuba,Roseville,95870,Expired,Electrical,New HVAC install,02/04/2025,02/04/2026,Owner 52,(458) 283-8705,owner52@example.com,Contractor 2,982810,5000
+P-2025-00053,Nevada,Auburn,95872,Issued,Roofing,Garage conversion,03/29/2025,03/29/2026,Owner 53,(453) 404-1333,owner53@example.com,Contractor 40,779892,8000
+P-2025-00054,Nevada,Rocklin,95576,Finaled,Plumbing,Garage conversion,07/22/2025,07/22/2026,Owner 54,(985) 577-3749,owner54@example.com,Contractor 39,760048,60000
+P-2025-00055,Nevada,Roseville,95689,Expired,Electrical,Kitchen remodel,07/03/2025,07/03/2026,Owner 55,(606) 932-4249,owner55@example.com,Contractor 5,827323,5000
+P-2025-00056,Nevada,Auburn,95455,Expired,Electrical,Garage conversion,10/03/2024,10/03/2025,Owner 56,(877) 579-2129,owner56@example.com,Contractor 33,878903,5000
+P-2025-00057,Yuba,Lincoln,95750,Expired,Plumbing,Kitchen remodel,02/21/2025,02/21/2026,Owner 57,(924) 356-8135,owner57@example.com,Contractor 12,973545,40000
+P-2025-00058,Yuba,Yuba City,95546,Finaled,Mechanical,Foundation repair,05/09/2025,05/09/2026,Owner 58,(530) 451-2419,owner58@example.com,Contractor 18,936350,8000
+P-2025-00059,Yuba,Lincoln,95129,Expired,Mechanical,Room addition,01/30/2025,01/30/2026,Owner 59,(532) 386-8988,owner59@example.com,Contractor 14,886030,60000
+P-2025-00060,Sacramento,Colfax,95110,In Progress,Electrical,Panel upgrade,05/15/2025,05/15/2026,Owner 60,(287) 447-7658,owner60@example.com,Contractor 32,991072,60000
+P-2025-00061,Yuba,Yuba City,95911,Issued,Plumbing,Garage conversion,05/24/2025,05/24/2026,Owner 61,(295) 501-4630,owner61@example.com,Contractor 26,827561,12000
+P-2025-00062,Yuba,Colfax,95643,Finaled,Mechanical,New HVAC install,10/20/2024,10/20/2025,Owner 62,(635) 963-6419,owner62@example.com,Contractor 23,937893,12000
+P-2025-00063,Nevada,Rocklin,95423,Issued,Electrical,New roof covering,04/21/2025,04/21/2026,Owner 63,(960) 748-4033,owner63@example.com,Contractor 13,813447,40000
+P-2025-00064,Sacramento,Grass Valley,95952,In Progress,Electrical,Room addition,01/20/2025,01/20/2026,Owner 64,(503) 432-6912,owner64@example.com,Contractor 12,858475,5000
+P-2025-00065,Sacramento,Auburn,95155,Finaled,Mechanical,Bathroom remodel,09/27/2024,09/27/2025,Owner 65,(914) 329-9042,owner65@example.com,Contractor 7,706430,25000
+P-2025-00066,Yuba,Lincoln,95288,Issued,Plumbing,Solar installation,05/02/2025,05/02/2026,Owner 66,(458) 689-2869,owner66@example.com,Contractor 5,910086,15000
+P-2025-00067,Nevada,Nevada City,95252,Finaled,Mechanical,Garage conversion,08/18/2025,08/18/2026,Owner 67,(287) 454-2940,owner67@example.com,Contractor 36,918195,25000
+P-2025-00068,Yuba,Yuba City,95553,Finaled,Mechanical,New roof covering,11/23/2024,11/23/2025,Owner 68,(802) 639-6003,owner68@example.com,Contractor 37,731578,25000
+P-2025-00069,Placer,Roseville,95776,Issued,Roofing,Garage conversion,08/05/2025,08/05/2026,Owner 69,(360) 445-3847,owner69@example.com,Contractor 36,739355,8000
+P-2025-00070,Yuba,Roseville,95133,In Progress,Plumbing,Solar installation,09/23/2025,09/23/2026,Owner 70,(495) 923-5632,owner70@example.com,Contractor 45,938043,5000
+P-2025-00071,Placer,Sacramento,95217,In Progress,Roofing,Panel upgrade,10/08/2024,10/08/2025,Owner 71,(863) 352-5352,owner71@example.com,Contractor 10,737439,5000
+P-2025-00072,Sacramento,Yuba City,95227,Expired,Electrical,Room addition,07/02/2025,07/02/2026,Owner 72,(905) 511-7594,owner72@example.com,Contractor 18,962391,25000
+P-2025-00073,Nevada,Sacramento,95852,Finaled,Plumbing,Kitchen remodel,01/15/2025,01/15/2026,Owner 73,(818) 456-1423,owner73@example.com,Contractor 6,820022,40000
+P-2025-00074,Sacramento,Auburn,95881,In Progress,Mechanical,Tear-off and replace roof,12/04/2024,12/04/2025,Owner 74,(681) 731-8245,owner74@example.com,Contractor 18,795152,25000
+P-2025-00075,Yuba,Lincoln,95518,Finaled,Plumbing,Kitchen remodel,02/13/2025,02/13/2026,Owner 75,(528) 886-2713,owner75@example.com,Contractor 11,872912,15000
+P-2025-00076,Yuba,Colfax,95137,Expired,Plumbing,Panel upgrade,10/04/2024,10/04/2025,Owner 76,(290) 522-5135,owner76@example.com,Contractor 21,760776,60000
+P-2025-00077,Yuba,Sacramento,95155,In Progress,Mechanical,Tear-off and replace roof,03/02/2025,03/02/2026,Owner 77,(730) 570-9167,owner77@example.com,Contractor 41,931756,60000
+P-2025-00078,Placer,Roseville,95548,Expired,Roofing,Panel upgrade,08/29/2025,08/29/2026,Owner 78,(324) 229-4920,owner78@example.com,Contractor 46,783035,12000
+P-2025-00079,Yuba,Grass Valley,95330,Issued,Building,Foundation repair,12/16/2024,12/16/2025,Owner 79,(672) 320-3522,owner79@example.com,Contractor 32,853019,25000
+P-2025-00080,Yuba,Yuba City,95349,Expired,Electrical,Re-roof with shingles,09/28/2024,09/28/2025,Owner 80,(764) 348-7284,owner80@example.com,Contractor 13,966464,40000
+P-2025-00081,Yuba,Lincoln,95906,Finaled,Building,Panel upgrade,07/17/2025,07/17/2026,Owner 81,(202) 489-5891,owner81@example.com,Contractor 38,956712,60000
+P-2025-00082,Yuba,Lincoln,95440,Expired,Plumbing,Foundation repair,07/10/2025,07/10/2026,Owner 82,(666) 529-4090,owner82@example.com,Contractor 45,825202,25000
+P-2025-00083,Nevada,Lincoln,95862,Expired,Roofing,Re-roof with shingles,03/12/2025,03/12/2026,Owner 83,(922) 590-7325,owner83@example.com,Contractor 43,779746,15000
+P-2025-00084,Sacramento,Grass Valley,95995,Expired,Roofing,Foundation repair,09/06/2025,09/06/2026,Owner 84,(302) 738-8486,owner84@example.com,Contractor 1,775578,15000
+P-2025-00085,Yuba,Roseville,95446,Expired,Roofing,Kitchen remodel,10/24/2024,10/24/2025,Owner 85,(865) 282-6383,owner85@example.com,Contractor 44,979771,15000
+P-2025-00086,Nevada,Grass Valley,95340,Finaled,Plumbing,Foundation repair,04/15/2025,04/15/2026,Owner 86,(432) 964-2480,owner86@example.com,Contractor 28,751612,60000
+P-2025-00087,Placer,Roseville,95129,Issued,Building,Solar installation,11/04/2024,11/04/2025,Owner 87,(532) 257-5806,owner87@example.com,Contractor 23,896524,15000
+P-2025-00088,Yuba,Nevada City,95274,In Progress,Roofing,Foundation repair,07/12/2025,07/12/2026,Owner 88,(280) 824-7267,owner88@example.com,Contractor 40,826264,15000
+P-2025-00089,Yuba,Roseville,95570,Finaled,Roofing,New roof covering,11/30/2024,11/30/2025,Owner 89,(882) 209-8622,owner89@example.com,Contractor 19,986574,8000
+P-2025-00090,Sacramento,Sacramento,95806,Finaled,Plumbing,New HVAC install,08/18/2025,08/18/2026,Owner 90,(667) 509-4263,owner90@example.com,Contractor 25,953340,5000
+P-2025-00091,Sacramento,Roseville,95816,Finaled,Plumbing,Room addition,05/26/2025,05/26/2026,Owner 91,(222) 874-7484,owner91@example.com,Contractor 18,704245,25000
+P-2025-00092,Yuba,Roseville,95894,In Progress,Building,Room addition,10/08/2024,10/08/2025,Owner 92,(821) 560-4588,owner92@example.com,Contractor 41,799683,25000
+P-2025-00093,Nevada,Auburn,95416,Expired,Roofing,Garage conversion,05/19/2025,05/19/2026,Owner 93,(234) 793-6977,owner93@example.com,Contractor 47,768897,5000
+P-2025-00094,Placer,Rocklin,95235,Finaled,Electrical,Re-roof with shingles,04/26/2025,04/26/2026,Owner 94,(743) 713-5465,owner94@example.com,Contractor 11,834726,60000
+P-2025-00095,Nevada,Yuba City,95177,In Progress,Electrical,New HVAC install,01/21/2025,01/21/2026,Owner 95,(972) 431-7511,owner95@example.com,Contractor 36,891771,5000
+P-2025-00096,Nevada,Yuba City,95477,Finaled,Building,Panel upgrade,03/06/2025,03/06/2026,Owner 96,(798) 590-7086,owner96@example.com,Contractor 7,822590,15000
+P-2025-00097,Sacramento,Rocklin,95763,Issued,Mechanical,Foundation repair,09/12/2025,09/12/2026,Owner 97,(850) 675-5951,owner97@example.com,Contractor 42,914064,5000
+P-2025-00098,Sacramento,Yuba City,95218,Issued,Building,Tear-off and replace roof,07/15/2025,07/15/2026,Owner 98,(440) 750-3222,owner98@example.com,Contractor 25,937839,12000
+P-2025-00099,Placer,Sacramento,95770,Issued,Mechanical,Re-roof with shingles,10/16/2024,10/16/2025,Owner 99,(701) 830-7686,owner99@example.com,Contractor 18,717152,40000
+P-2025-00100,Yuba,Rocklin,95975,Finaled,Roofing,Solar installation,03/19/2025,03/19/2026,Owner 100,(301) 902-7018,owner100@example.com,Contractor 35,888048,5000
+P-2025-00101,Nevada,Yuba City,95193,In Progress,Electrical,New roof covering,03/05/2025,03/05/2026,Owner 101,(857) 854-1349,owner101@example.com,Contractor 4,874854,8000
+P-2025-00102,Nevada,Colfax,95312,In Progress,Mechanical,New roof covering,07/22/2025,07/22/2026,Owner 102,(438) 536-3417,owner102@example.com,Contractor 39,701486,12000
+P-2025-00103,Sacramento,Nevada City,95212,Issued,Roofing,Foundation repair,07/12/2025,07/12/2026,Owner 103,(334) 215-6869,owner103@example.com,Contractor 16,869749,5000
+P-2025-00104,Placer,Sacramento,95638,Issued,Electrical,Tear-off and replace roof,06/27/2025,06/27/2026,Owner 104,(963) 265-8802,owner104@example.com,Contractor 29,889812,25000
+P-2025-00105,Placer,Auburn,95844,Finaled,Building,Solar installation,11/25/2024,11/25/2025,Owner 105,(669) 858-1510,owner105@example.com,Contractor 4,951124,60000
+P-2025-00106,Nevada,Yuba City,95829,Expired,Plumbing,Garage conversion,03/03/2025,03/03/2026,Owner 106,(275) 282-6277,owner106@example.com,Contractor 39,777769,5000
+P-2025-00107,Sacramento,Sacramento,95711,Finaled,Electrical,Room addition,07/22/2025,07/22/2026,Owner 107,(664) 717-8048,owner107@example.com,Contractor 7,759985,60000
+P-2025-00108,Yuba,Yuba City,95333,Expired,Mechanical,New roof covering,10/24/2024,10/24/2025,Owner 108,(547) 664-7532,owner108@example.com,Contractor 27,749852,12000
+P-2025-00109,Sacramento,Lincoln,95256,Expired,Electrical,Garage conversion,02/18/2025,02/18/2026,Owner 109,(268) 293-2398,owner109@example.com,Contractor 6,926427,5000
+P-2025-00110,Nevada,Colfax,95675,Finaled,Roofing,Foundation repair,03/18/2025,03/18/2026,Owner 110,(886) 325-7730,owner110@example.com,Contractor 23,921740,60000
+P-2025-00111,Sacramento,Lincoln,95206,In Progress,Electrical,Room addition,08/29/2025,08/29/2026,Owner 111,(358) 872-8900,owner111@example.com,Contractor 15,756737,12000
+P-2025-00112,Sacramento,Rocklin,95926,Expired,Electrical,Kitchen remodel,12/14/2024,12/14/2025,Owner 112,(774) 985-1430,owner112@example.com,Contractor 39,840219,5000
+P-2025-00113,Sacramento,Lincoln,95106,In Progress,Electrical,Panel upgrade,06/24/2025,06/24/2026,Owner 113,(346) 779-7566,owner113@example.com,Contractor 5,774383,40000
+P-2025-00114,Placer,Sacramento,95529,Expired,Building,Kitchen remodel,11/04/2024,11/04/2025,Owner 114,(549) 361-7062,owner114@example.com,Contractor 20,870070,60000
+P-2025-00115,Nevada,Nevada City,95261,Issued,Mechanical,Kitchen remodel,12/08/2024,12/08/2025,Owner 115,(890) 283-5458,owner115@example.com,Contractor 29,922305,15000
+P-2025-00116,Sacramento,Rocklin,95873,Issued,Plumbing,Re-roof with shingles,11/18/2024,11/18/2025,Owner 116,(553) 640-2816,owner116@example.com,Contractor 19,955135,25000
+P-2025-00117,Placer,Sacramento,95713,Issued,Electrical,Tear-off and replace roof,10/18/2024,10/18/2025,Owner 117,(207) 409-5938,owner117@example.com,Contractor 14,771950,60000
+P-2025-00118,Nevada,Auburn,95609,Expired,Electrical,New HVAC install,05/17/2025,05/17/2026,Owner 118,(379) 332-7229,owner118@example.com,Contractor 35,820644,25000
+P-2025-00119,Yuba,Auburn,95546,Issued,Electrical,Kitchen remodel,12/12/2024,12/12/2025,Owner 119,(670) 279-6129,owner119@example.com,Contractor 37,925068,25000
+P-2025-00120,Nevada,Sacramento,95121,Finaled,Plumbing,Panel upgrade,03/01/2025,03/01/2026,Owner 120,(375) 832-8538,owner120@example.com,Contractor 45,889715,5000
+P-2025-00121,Yuba,Sacramento,95636,Issued,Building,New roof covering,02/13/2025,02/13/2026,Owner 121,(605) 517-6562,owner121@example.com,Contractor 15,874623,60000
+P-2025-00122,Nevada,Colfax,95622,In Progress,Building,Foundation repair,06/30/2025,06/30/2026,Owner 122,(994) 557-6752,owner122@example.com,Contractor 47,777432,8000
+P-2025-00123,Placer,Nevada City,95716,In Progress,Roofing,Panel upgrade,08/03/2025,08/03/2026,Owner 123,(978) 977-2234,owner123@example.com,Contractor 12,959059,15000
+P-2025-00124,Sacramento,Lincoln,95254,Expired,Mechanical,Solar installation,12/10/2024,12/10/2025,Owner 124,(269) 680-8245,owner124@example.com,Contractor 41,858765,60000
+P-2025-00125,Sacramento,Colfax,95175,Finaled,Mechanical,Tear-off and replace roof,05/07/2025,05/07/2026,Owner 125,(672) 662-1616,owner125@example.com,Contractor 4,893324,60000
+P-2025-00126,Nevada,Colfax,95493,Expired,Building,Garage conversion,05/01/2025,05/01/2026,Owner 126,(794) 767-1672,owner126@example.com,Contractor 29,999712,40000
+P-2025-00127,Yuba,Colfax,95254,Issued,Electrical,Room addition,06/20/2025,06/20/2026,Owner 127,(661) 305-6626,owner127@example.com,Contractor 46,744212,25000
+P-2025-00128,Placer,Yuba City,95549,In Progress,Roofing,Tear-off and replace roof,10/29/2024,10/29/2025,Owner 128,(572) 581-5634,owner128@example.com,Contractor 25,914312,60000
+P-2025-00129,Sacramento,Grass Valley,95437,Issued,Mechanical,Tear-off and replace roof,04/04/2025,04/04/2026,Owner 129,(771) 894-7333,owner129@example.com,Contractor 19,832118,40000
+P-2025-00130,Sacramento,Grass Valley,95696,In Progress,Mechanical,Bathroom remodel,10/23/2024,10/23/2025,Owner 130,(558) 517-7421,owner130@example.com,Contractor 9,744417,12000
+P-2025-00131,Sacramento,Nevada City,95786,Issued,Plumbing,Garage conversion,12/12/2024,12/12/2025,Owner 131,(861) 886-7937,owner131@example.com,Contractor 33,889702,5000
+P-2025-00132,Placer,Lincoln,95884,Expired,Electrical,Bathroom remodel,03/23/2025,03/23/2026,Owner 132,(396) 431-3253,owner132@example.com,Contractor 10,740456,12000
+P-2025-00133,Nevada,Lincoln,95997,In Progress,Mechanical,Foundation repair,08/04/2025,08/04/2026,Owner 133,(811) 585-3527,owner133@example.com,Contractor 11,794815,60000
+P-2025-00134,Yuba,Auburn,95520,Finaled,Mechanical,Bathroom remodel,10/05/2024,10/05/2025,Owner 134,(892) 936-4891,owner134@example.com,Contractor 29,849384,60000
+P-2025-00135,Placer,Roseville,95928,Expired,Roofing,Foundation repair,02/07/2025,02/07/2026,Owner 135,(398) 576-8218,owner135@example.com,Contractor 30,847729,60000
+P-2025-00136,Yuba,Nevada City,95936,In Progress,Mechanical,Foundation repair,03/13/2025,03/13/2026,Owner 136,(819) 341-5096,owner136@example.com,Contractor 4,951967,60000
+P-2025-00137,Nevada,Roseville,95185,In Progress,Mechanical,Kitchen remodel,03/18/2025,03/18/2026,Owner 137,(479) 660-9410,owner137@example.com,Contractor 10,929361,5000
+P-2025-00138,Nevada,Sacramento,95154,Expired,Plumbing,New HVAC install,06/03/2025,06/03/2026,Owner 138,(714) 582-4862,owner138@example.com,Contractor 25,742784,12000
+P-2025-00139,Nevada,Lincoln,95910,In Progress,Building,New HVAC install,06/02/2025,06/02/2026,Owner 139,(340) 239-5700,owner139@example.com,Contractor 31,772767,60000
+P-2025-00140,Nevada,Grass Valley,95119,Finaled,Plumbing,Solar installation,09/28/2024,09/28/2025,Owner 140,(420) 353-9991,owner140@example.com,Contractor 47,976704,15000
+P-2025-00141,Sacramento,Grass Valley,95148,In Progress,Electrical,New roof covering,07/30/2025,07/30/2026,Owner 141,(629) 854-8489,owner141@example.com,Contractor 5,758121,60000
+P-2025-00142,Nevada,Colfax,95688,In Progress,Mechanical,Foundation repair,01/12/2025,01/12/2026,Owner 142,(935) 347-5772,owner142@example.com,Contractor 28,700820,25000
+P-2025-00143,Yuba,Nevada City,95780,Issued,Roofing,Room addition,03/28/2025,03/28/2026,Owner 143,(736) 569-2108,owner143@example.com,Contractor 34,985255,25000
+P-2025-00144,Yuba,Yuba City,95144,Expired,Mechanical,Tear-off and replace roof,01/08/2025,01/08/2026,Owner 144,(582) 459-1266,owner144@example.com,Contractor 23,735420,12000
+P-2025-00145,Sacramento,Nevada City,95145,Finaled,Building,Room addition,05/24/2025,05/24/2026,Owner 145,(759) 546-3868,owner145@example.com,Contractor 50,943596,40000
+P-2025-00146,Nevada,Yuba City,95137,Finaled,Roofing,Bathroom remodel,01/22/2025,01/22/2026,Owner 146,(406) 244-4268,owner146@example.com,Contractor 3,865463,12000
+P-2025-00147,Yuba,Roseville,95137,In Progress,Plumbing,Foundation repair,01/04/2025,01/04/2026,Owner 147,(492) 565-1783,owner147@example.com,Contractor 42,874024,12000
+P-2025-00148,Yuba,Yuba City,95495,Finaled,Electrical,Re-roof with shingles,07/23/2025,07/23/2026,Owner 148,(391) 708-9151,owner148@example.com,Contractor 24,972250,12000
+P-2025-00149,Yuba,Nevada City,95658,Finaled,Plumbing,Kitchen remodel,08/13/2025,08/13/2026,Owner 149,(528) 305-2311,owner149@example.com,Contractor 21,855000,12000
+P-2025-00150,Placer,Yuba City,95459,Expired,Mechanical,Re-roof with shingles,02/08/2025,02/08/2026,Owner 150,(243) 944-6776,owner150@example.com,Contractor 40,928034,12000
+P-2025-00151,Yuba,Lincoln,95625,In Progress,Building,Kitchen remodel,11/01/2024,11/01/2025,Owner 151,(231) 346-8179,owner151@example.com,Contractor 3,766180,5000
+P-2025-00152,Yuba,Auburn,95719,In Progress,Electrical,New HVAC install,05/27/2025,05/27/2026,Owner 152,(895) 660-7077,owner152@example.com,Contractor 24,932752,60000
+P-2025-00153,Sacramento,Sacramento,95421,Finaled,Mechanical,Bathroom remodel,08/16/2025,08/16/2026,Owner 153,(455) 316-1424,owner153@example.com,Contractor 48,797542,15000
+P-2025-00154,Nevada,Roseville,95893,Finaled,Plumbing,Foundation repair,01/02/2025,01/02/2026,Owner 154,(920) 656-4515,owner154@example.com,Contractor 40,849724,40000
+P-2025-00155,Placer,Grass Valley,95562,In Progress,Roofing,Kitchen remodel,01/16/2025,01/16/2026,Owner 155,(930) 655-2438,owner155@example.com,Contractor 44,867556,40000
+P-2025-00156,Sacramento,Roseville,95971,In Progress,Building,Foundation repair,03/31/2025,03/31/2026,Owner 156,(928) 926-3852,owner156@example.com,Contractor 24,966734,8000
+P-2025-00157,Placer,Yuba City,95126,Finaled,Roofing,Bathroom remodel,07/24/2025,07/24/2026,Owner 157,(767) 786-7044,owner157@example.com,Contractor 30,989221,8000
+P-2025-00158,Sacramento,Sacramento,95834,Expired,Building,Kitchen remodel,11/15/2024,11/15/2025,Owner 158,(738) 620-7708,owner158@example.com,Contractor 37,738666,8000
+P-2025-00159,Yuba,Colfax,95452,In Progress,Building,Solar installation,04/15/2025,04/15/2026,Owner 159,(998) 764-3981,owner159@example.com,Contractor 50,767650,15000
+P-2025-00160,Placer,Roseville,95268,In Progress,Building,Kitchen remodel,01/10/2025,01/10/2026,Owner 160,(530) 926-4694,owner160@example.com,Contractor 23,972051,12000
+P-2025-00161,Sacramento,Nevada City,95740,Finaled,Electrical,New roof covering,08/15/2025,08/15/2026,Owner 161,(829) 746-2530,owner161@example.com,Contractor 33,788413,25000
+P-2025-00162,Sacramento,Auburn,95945,Issued,Roofing,Bathroom remodel,12/01/2024,12/01/2025,Owner 162,(283) 246-5336,owner162@example.com,Contractor 42,810524,60000
+P-2025-00163,Nevada,Yuba City,95742,Finaled,Plumbing,Room addition,12/06/2024,12/06/2025,Owner 163,(857) 509-8912,owner163@example.com,Contractor 16,912909,12000
+P-2025-00164,Placer,Yuba City,95525,Expired,Building,Tear-off and replace roof,02/04/2025,02/04/2026,Owner 164,(675) 408-6573,owner164@example.com,Contractor 39,775323,12000
+P-2025-00165,Placer,Lincoln,95627,Issued,Electrical,Re-roof with shingles,04/14/2025,04/14/2026,Owner 165,(526) 447-8642,owner165@example.com,Contractor 8,840232,15000
+P-2025-00166,Nevada,Roseville,95493,Expired,Roofing,Kitchen remodel,05/21/2025,05/21/2026,Owner 166,(454) 363-6364,owner166@example.com,Contractor 37,863952,8000
+P-2025-00167,Yuba,Yuba City,95415,Expired,Plumbing,Foundation repair,07/05/2025,07/05/2026,Owner 167,(223) 292-7442,owner167@example.com,Contractor 33,939720,8000
+P-2025-00168,Nevada,Auburn,95388,Expired,Mechanical,New HVAC install,06/06/2025,06/06/2026,Owner 168,(811) 869-8710,owner168@example.com,Contractor 19,981380,5000
+P-2025-00169,Sacramento,Lincoln,95882,Expired,Plumbing,Bathroom remodel,07/31/2025,07/31/2026,Owner 169,(574) 246-7563,owner169@example.com,Contractor 4,998991,25000
+P-2025-00170,Sacramento,Grass Valley,95495,Expired,Electrical,Foundation repair,06/17/2025,06/17/2026,Owner 170,(982) 763-5582,owner170@example.com,Contractor 40,762291,8000
+P-2025-00171,Sacramento,Colfax,95474,In Progress,Plumbing,New HVAC install,08/06/2025,08/06/2026,Owner 171,(403) 816-9341,owner171@example.com,Contractor 26,962184,5000
+P-2025-00172,Sacramento,Yuba City,95631,Expired,Building,Bathroom remodel,09/01/2025,09/01/2026,Owner 172,(352) 820-9446,owner172@example.com,Contractor 9,871948,25000
+P-2025-00173,Sacramento,Lincoln,95619,Expired,Roofing,Re-roof with shingles,04/14/2025,04/14/2026,Owner 173,(925) 776-5911,owner173@example.com,Contractor 31,708722,12000
+P-2025-00174,Sacramento,Auburn,95711,Expired,Building,Re-roof with shingles,04/08/2025,04/08/2026,Owner 174,(471) 871-4728,owner174@example.com,Contractor 47,726924,25000
+P-2025-00175,Yuba,Nevada City,95941,In Progress,Roofing,Foundation repair,01/22/2025,01/22/2026,Owner 175,(232) 786-2800,owner175@example.com,Contractor 13,709928,15000
+P-2025-00176,Yuba,Rocklin,95520,Expired,Plumbing,Bathroom remodel,04/17/2025,04/17/2026,Owner 176,(953) 944-2020,owner176@example.com,Contractor 46,772394,25000
+P-2025-00177,Yuba,Colfax,95485,Finaled,Mechanical,New HVAC install,06/10/2025,06/10/2026,Owner 177,(377) 670-9734,owner177@example.com,Contractor 22,986404,12000
+P-2025-00178,Yuba,Rocklin,95352,Finaled,Electrical,Room addition,10/13/2024,10/13/2025,Owner 178,(771) 505-4684,owner178@example.com,Contractor 20,851521,40000
+P-2025-00179,Yuba,Lincoln,95673,Finaled,Plumbing,New HVAC install,06/10/2025,06/10/2026,Owner 179,(494) 324-9899,owner179@example.com,Contractor 25,906848,60000
+P-2025-00180,Nevada,Roseville,95831,Issued,Roofing,Panel upgrade,04/01/2025,04/01/2026,Owner 180,(554) 652-5201,owner180@example.com,Contractor 48,951175,8000
+P-2025-00181,Sacramento,Nevada City,95211,In Progress,Mechanical,Panel upgrade,06/13/2025,06/13/2026,Owner 181,(448) 251-9700,owner181@example.com,Contractor 15,822073,5000
+P-2025-00182,Yuba,Grass Valley,95797,In Progress,Plumbing,New HVAC install,08/04/2025,08/04/2026,Owner 182,(205) 763-3587,owner182@example.com,Contractor 27,949403,15000
+P-2025-00183,Sacramento,Roseville,95761,Issued,Roofing,Panel upgrade,10/26/2024,10/26/2025,Owner 183,(987) 291-4804,owner183@example.com,Contractor 35,719555,8000
+P-2025-00184,Yuba,Yuba City,95290,Finaled,Roofing,Tear-off and replace roof,02/23/2025,02/23/2026,Owner 184,(238) 209-5888,owner184@example.com,Contractor 37,756256,12000
+P-2025-00185,Yuba,Nevada City,95971,Expired,Plumbing,Garage conversion,05/02/2025,05/02/2026,Owner 185,(479) 397-2845,owner185@example.com,Contractor 22,785193,40000
+P-2025-00186,Nevada,Lincoln,95909,Finaled,Electrical,Bathroom remodel,02/02/2025,02/02/2026,Owner 186,(781) 890-4164,owner186@example.com,Contractor 12,912593,60000
+P-2025-00187,Nevada,Sacramento,95785,Issued,Mechanical,New HVAC install,02/18/2025,02/18/2026,Owner 187,(389) 343-8822,owner187@example.com,Contractor 21,830048,5000
+P-2025-00188,Yuba,Roseville,95437,Finaled,Plumbing,New roof covering,05/14/2025,05/14/2026,Owner 188,(796) 940-1187,owner188@example.com,Contractor 17,888508,40000
+P-2025-00189,Nevada,Yuba City,95414,In Progress,Building,Garage conversion,05/27/2025,05/27/2026,Owner 189,(615) 902-9233,owner189@example.com,Contractor 46,863042,40000
+P-2025-00190,Placer,Rocklin,95236,Expired,Electrical,New HVAC install,07/26/2025,07/26/2026,Owner 190,(356) 665-7121,owner190@example.com,Contractor 27,987957,15000
+P-2025-00191,Nevada,Colfax,95557,Finaled,Roofing,New roof covering,12/23/2024,12/23/2025,Owner 191,(279) 777-2838,owner191@example.com,Contractor 4,987125,25000
+P-2025-00192,Placer,Nevada City,95435,Expired,Mechanical,Foundation repair,06/13/2025,06/13/2026,Owner 192,(319) 896-4365,owner192@example.com,Contractor 46,956286,5000
+P-2025-00193,Yuba,Nevada City,95625,Expired,Plumbing,Tear-off and replace roof,01/06/2025,01/06/2026,Owner 193,(667) 777-1945,owner193@example.com,Contractor 36,942419,40000
+P-2025-00194,Sacramento,Auburn,95863,In Progress,Building,Re-roof with shingles,04/20/2025,04/20/2026,Owner 194,(792) 274-1742,owner194@example.com,Contractor 28,880632,40000
+P-2025-00195,Nevada,Yuba City,95132,Finaled,Mechanical,Tear-off and replace roof,08/23/2025,08/23/2026,Owner 195,(618) 384-3218,owner195@example.com,Contractor 50,920390,12000
+P-2025-00196,Yuba,Grass Valley,95799,In Progress,Plumbing,Re-roof with shingles,03/13/2025,03/13/2026,Owner 196,(869) 556-2943,owner196@example.com,Contractor 12,981678,15000
+P-2025-00197,Nevada,Auburn,95405,Expired,Roofing,New roof covering,12/28/2024,12/28/2025,Owner 197,(889) 936-9920,owner197@example.com,Contractor 28,978886,15000
+P-2025-00198,Sacramento,Nevada City,95382,In Progress,Roofing,Solar installation,05/30/2025,05/30/2026,Owner 198,(942) 983-2848,owner198@example.com,Contractor 3,919802,25000
+P-2025-00199,Nevada,Grass Valley,95708,Issued,Roofing,New roof covering,09/16/2025,09/16/2026,Owner 199,(657) 812-1797,owner199@example.com,Contractor 16,723192,15000
+P-2025-00200,Placer,Auburn,95243,Finaled,Roofing,Foundation repair,02/12/2025,02/12/2026,Owner 200,(439) 949-6224,owner200@example.com,Contractor 37,868120,8000
+P-2025-00201,Placer,Sacramento,95407,Finaled,Roofing,Garage conversion,04/23/2025,04/23/2026,Owner 201,(262) 770-3869,owner201@example.com,Contractor 41,923976,25000
+P-2025-00202,Yuba,Colfax,95426,Expired,Building,New HVAC install,01/14/2025,01/14/2026,Owner 202,(618) 352-5913,owner202@example.com,Contractor 25,796405,60000
+P-2025-00203,Placer,Roseville,95978,In Progress,Plumbing,New roof covering,12/23/2024,12/23/2025,Owner 203,(674) 259-7761,owner203@example.com,Contractor 27,992178,25000
+P-2025-00204,Sacramento,Rocklin,95438,Issued,Plumbing,New roof covering,07/18/2025,07/18/2026,Owner 204,(660) 579-2514,owner204@example.com,Contractor 35,799867,5000
+P-2025-00205,Nevada,Grass Valley,95292,In Progress,Plumbing,Garage conversion,05/10/2025,05/10/2026,Owner 205,(690) 413-6455,owner205@example.com,Contractor 20,708039,8000
+P-2025-00206,Placer,Rocklin,95506,In Progress,Building,Solar installation,06/19/2025,06/19/2026,Owner 206,(765) 529-5637,owner206@example.com,Contractor 25,944449,25000
+P-2025-00207,Sacramento,Lincoln,95625,Expired,Electrical,Panel upgrade,10/27/2024,10/27/2025,Owner 207,(677) 300-8692,owner207@example.com,Contractor 49,867894,8000
+P-2025-00208,Nevada,Rocklin,95859,In Progress,Electrical,Re-roof with shingles,03/19/2025,03/19/2026,Owner 208,(216) 467-7841,owner208@example.com,Contractor 19,779907,8000
+P-2025-00209,Placer,Yuba City,95663,Finaled,Roofing,Re-roof with shingles,04/09/2025,04/09/2026,Owner 209,(463) 981-9005,owner209@example.com,Contractor 47,957213,15000
+P-2025-00210,Placer,Colfax,95600,In Progress,Electrical,Bathroom remodel,06/30/2025,06/30/2026,Owner 210,(755) 857-1962,owner210@example.com,Contractor 34,717733,60000
+P-2025-00211,Yuba,Nevada City,95962,In Progress,Building,Tear-off and replace roof,08/17/2025,08/17/2026,Owner 211,(269) 924-3474,owner211@example.com,Contractor 1,814672,25000
+P-2025-00212,Yuba,Yuba City,95116,Issued,Electrical,Tear-off and replace roof,02/03/2025,02/03/2026,Owner 212,(744) 764-7739,owner212@example.com,Contractor 1,708769,25000
+P-2025-00213,Nevada,Colfax,95932,Expired,Mechanical,Panel upgrade,05/07/2025,05/07/2026,Owner 213,(383) 309-2578,owner213@example.com,Contractor 34,778065,8000
+P-2025-00214,Sacramento,Lincoln,95373,Expired,Mechanical,Foundation repair,06/18/2025,06/18/2026,Owner 214,(280) 582-7652,owner214@example.com,Contractor 30,996223,8000
+P-2025-00215,Nevada,Auburn,95195,Expired,Roofing,Panel upgrade,10/03/2024,10/03/2025,Owner 215,(588) 586-8798,owner215@example.com,Contractor 4,704954,40000
+P-2025-00216,Yuba,Lincoln,95679,Issued,Building,Solar installation,06/29/2025,06/29/2026,Owner 216,(740) 243-4764,owner216@example.com,Contractor 14,997158,15000
+P-2025-00217,Sacramento,Colfax,95677,Issued,Building,Kitchen remodel,05/09/2025,05/09/2026,Owner 217,(383) 522-1256,owner217@example.com,Contractor 14,775597,60000
+P-2025-00218,Sacramento,Nevada City,95677,In Progress,Plumbing,Kitchen remodel,09/25/2024,09/25/2025,Owner 218,(780) 598-9856,owner218@example.com,Contractor 22,901245,60000
+P-2025-00219,Sacramento,Auburn,95200,Expired,Building,Foundation repair,07/15/2025,07/15/2026,Owner 219,(437) 277-6580,owner219@example.com,Contractor 39,907986,60000
+P-2025-00220,Sacramento,Yuba City,95602,In Progress,Building,Garage conversion,04/10/2025,04/10/2026,Owner 220,(564) 766-7150,owner220@example.com,Contractor 28,797380,40000
+P-2025-00221,Sacramento,Rocklin,95830,Issued,Plumbing,Kitchen remodel,11/29/2024,11/29/2025,Owner 221,(284) 474-3526,owner221@example.com,Contractor 25,780885,40000
+P-2025-00222,Nevada,Grass Valley,95105,Finaled,Electrical,New HVAC install,03/09/2025,03/09/2026,Owner 222,(655) 568-5419,owner222@example.com,Contractor 7,769471,5000
+P-2025-00223,Yuba,Grass Valley,95126,Issued,Plumbing,Solar installation,06/21/2025,06/21/2026,Owner 223,(562) 767-2524,owner223@example.com,Contractor 39,870094,60000
+P-2025-00224,Yuba,Sacramento,95897,Issued,Building,Panel upgrade,03/11/2025,03/11/2026,Owner 224,(942) 772-4977,owner224@example.com,Contractor 37,973208,8000
+P-2025-00225,Placer,Roseville,95408,Finaled,Plumbing,Bathroom remodel,10/09/2024,10/09/2025,Owner 225,(704) 349-2036,owner225@example.com,Contractor 11,927895,12000
+P-2025-00226,Nevada,Lincoln,95357,In Progress,Electrical,Solar installation,02/21/2025,02/21/2026,Owner 226,(938) 840-9123,owner226@example.com,Contractor 39,802523,15000
+P-2025-00227,Nevada,Sacramento,95440,Expired,Roofing,Panel upgrade,08/01/2025,08/01/2026,Owner 227,(537) 650-6484,owner227@example.com,Contractor 28,771368,12000
+P-2025-00228,Yuba,Lincoln,95281,Expired,Mechanical,New roof covering,04/13/2025,04/13/2026,Owner 228,(526) 498-9044,owner228@example.com,Contractor 37,827100,12000
+P-2025-00229,Sacramento,Grass Valley,95677,In Progress,Electrical,Re-roof with shingles,03/16/2025,03/16/2026,Owner 229,(806) 758-3947,owner229@example.com,Contractor 44,988410,5000
+P-2025-00230,Sacramento,Grass Valley,95938,Expired,Roofing,Solar installation,01/31/2025,01/31/2026,Owner 230,(889) 711-3280,owner230@example.com,Contractor 41,858771,8000
+P-2025-00231,Yuba,Grass Valley,95559,Expired,Roofing,Re-roof with shingles,05/18/2025,05/18/2026,Owner 231,(796) 610-9755,owner231@example.com,Contractor 33,919310,25000
+P-2025-00232,Nevada,Grass Valley,95887,In Progress,Electrical,Foundation repair,09/06/2025,09/06/2026,Owner 232,(873) 880-6816,owner232@example.com,Contractor 11,723224,25000
+P-2025-00233,Yuba,Grass Valley,95110,Issued,Plumbing,New HVAC install,10/29/2024,10/29/2025,Owner 233,(464) 427-9366,owner233@example.com,Contractor 48,971999,25000
+P-2025-00234,Yuba,Lincoln,95500,Expired,Mechanical,New roof covering,12/01/2024,12/01/2025,Owner 234,(990) 895-9199,owner234@example.com,Contractor 10,880862,5000
+P-2025-00235,Yuba,Grass Valley,95218,In Progress,Building,Panel upgrade,01/20/2025,01/20/2026,Owner 235,(556) 519-6620,owner235@example.com,Contractor 30,808458,25000
+P-2025-00236,Nevada,Yuba City,95839,Expired,Electrical,Solar installation,01/20/2025,01/20/2026,Owner 236,(526) 268-5919,owner236@example.com,Contractor 3,760337,5000
+P-2025-00237,Placer,Rocklin,95628,In Progress,Building,Garage conversion,04/02/2025,04/02/2026,Owner 237,(765) 363-6422,owner237@example.com,Contractor 36,923540,15000
+P-2025-00238,Placer,Nevada City,95755,Expired,Plumbing,Garage conversion,05/29/2025,05/29/2026,Owner 238,(605) 229-4232,owner238@example.com,Contractor 29,925209,15000
+P-2025-00239,Sacramento,Grass Valley,95691,Issued,Roofing,New roof covering,09/22/2025,09/22/2026,Owner 239,(749) 391-6993,owner239@example.com,Contractor 21,803323,15000
+P-2025-00240,Yuba,Colfax,95754,Finaled,Electrical,Garage conversion,07/28/2025,07/28/2026,Owner 240,(811) 597-7431,owner240@example.com,Contractor 38,759890,12000
+P-2025-00241,Placer,Roseville,95729,Issued,Plumbing,Room addition,03/28/2025,03/28/2026,Owner 241,(888) 337-6131,owner241@example.com,Contractor 8,825080,12000
+P-2025-00242,Placer,Colfax,95497,Expired,Roofing,New HVAC install,07/27/2025,07/27/2026,Owner 242,(810) 341-7286,owner242@example.com,Contractor 28,797388,15000
+P-2025-00243,Placer,Colfax,95270,Expired,Mechanical,Garage conversion,11/03/2024,11/03/2025,Owner 243,(495) 343-4065,owner243@example.com,Contractor 21,936454,25000
+P-2025-00244,Yuba,Nevada City,95299,Expired,Electrical,Tear-off and replace roof,08/28/2025,08/28/2026,Owner 244,(775) 717-9109,owner244@example.com,Contractor 27,957805,15000
+P-2025-00245,Placer,Grass Valley,95678,Issued,Plumbing,Solar installation,09/26/2024,09/26/2025,Owner 245,(979) 425-5785,owner245@example.com,Contractor 3,844102,8000
+P-2025-00246,Yuba,Yuba City,95662,Issued,Electrical,Bathroom remodel,12/23/2024,12/23/2025,Owner 246,(786) 316-5389,owner246@example.com,Contractor 50,984744,60000
+P-2025-00247,Yuba,Colfax,95323,Expired,Mechanical,Tear-off and replace roof,03/21/2025,03/21/2026,Owner 247,(304) 953-5055,owner247@example.com,Contractor 20,716898,15000
+P-2025-00248,Yuba,Grass Valley,95894,In Progress,Electrical,Kitchen remodel,05/13/2025,05/13/2026,Owner 248,(414) 955-6744,owner248@example.com,Contractor 46,924482,8000
+P-2025-00249,Placer,Auburn,95683,Finaled,Roofing,New roof covering,11/13/2024,11/13/2025,Owner 249,(745) 487-9827,owner249@example.com,Contractor 11,869687,40000
+P-2025-00250,Sacramento,Colfax,95795,Issued,Electrical,Room addition,04/28/2025,04/28/2026,Owner 250,(338) 968-7743,owner250@example.com,Contractor 4,845397,60000
+P-2025-00251,Placer,Nevada City,95828,Finaled,Roofing,Bathroom remodel,10/24/2024,10/24/2025,Owner 251,(453) 979-7434,owner251@example.com,Contractor 32,774538,25000
+P-2025-00252,Yuba,Sacramento,95562,Issued,Electrical,Garage conversion,11/05/2024,11/05/2025,Owner 252,(848) 987-2525,owner252@example.com,Contractor 26,970329,40000
+P-2025-00253,Yuba,Lincoln,95695,Issued,Electrical,Solar installation,05/05/2025,05/05/2026,Owner 253,(992) 950-2526,owner253@example.com,Contractor 47,940359,40000
+P-2025-00254,Yuba,Rocklin,95539,In Progress,Electrical,Kitchen remodel,10/19/2024,10/19/2025,Owner 254,(706) 474-6289,owner254@example.com,Contractor 19,877080,25000
+P-2025-00255,Yuba,Lincoln,95798,Issued,Roofing,Room addition,12/03/2024,12/03/2025,Owner 255,(247) 301-8529,owner255@example.com,Contractor 2,765136,60000
+P-2025-00256,Nevada,Sacramento,95307,In Progress,Plumbing,Solar installation,07/06/2025,07/06/2026,Owner 256,(865) 509-3604,owner256@example.com,Contractor 18,748937,40000
+P-2025-00257,Sacramento,Nevada City,95153,Expired,Electrical,Kitchen remodel,03/24/2025,03/24/2026,Owner 257,(840) 512-4836,owner257@example.com,Contractor 28,747814,40000
+P-2025-00258,Yuba,Grass Valley,95235,In Progress,Building,New roof covering,08/07/2025,08/07/2026,Owner 258,(731) 896-8291,owner258@example.com,Contractor 1,704227,40000
+P-2025-00259,Placer,Yuba City,95172,In Progress,Building,Re-roof with shingles,04/02/2025,04/02/2026,Owner 259,(592) 291-2678,owner259@example.com,Contractor 7,864286,12000
+P-2025-00260,Placer,Nevada City,95170,Issued,Roofing,Re-roof with shingles,04/24/2025,04/24/2026,Owner 260,(824) 865-3688,owner260@example.com,Contractor 29,884123,40000
+P-2025-00261,Yuba,Rocklin,95188,Issued,Roofing,Re-roof with shingles,06/07/2025,06/07/2026,Owner 261,(343) 970-3017,owner261@example.com,Contractor 38,901343,12000
+P-2025-00262,Placer,Roseville,95760,Issued,Electrical,Bathroom remodel,02/17/2025,02/17/2026,Owner 262,(454) 766-5668,owner262@example.com,Contractor 50,714063,60000
+P-2025-00263,Placer,Sacramento,95402,Issued,Electrical,New roof covering,10/22/2024,10/22/2025,Owner 263,(445) 706-7322,owner263@example.com,Contractor 8,826396,15000
+P-2025-00264,Nevada,Lincoln,95424,In Progress,Mechanical,Kitchen remodel,11/02/2024,11/02/2025,Owner 264,(596) 782-7895,owner264@example.com,Contractor 24,986448,40000
+P-2025-00265,Nevada,Grass Valley,95114,Finaled,Plumbing,Kitchen remodel,06/28/2025,06/28/2026,Owner 265,(420) 240-1990,owner265@example.com,Contractor 26,965609,12000
+P-2025-00266,Yuba,Sacramento,95184,In Progress,Mechanical,Re-roof with shingles,11/07/2024,11/07/2025,Owner 266,(484) 285-6077,owner266@example.com,Contractor 6,968070,8000
+P-2025-00267,Yuba,Grass Valley,95417,Expired,Mechanical,New HVAC install,07/07/2025,07/07/2026,Owner 267,(947) 444-1948,owner267@example.com,Contractor 16,745200,15000
+P-2025-00268,Nevada,Roseville,95782,In Progress,Plumbing,Room addition,07/27/2025,07/27/2026,Owner 268,(322) 212-3248,owner268@example.com,Contractor 45,705950,8000
+P-2025-00269,Sacramento,Nevada City,95480,In Progress,Electrical,Foundation repair,01/13/2025,01/13/2026,Owner 269,(967) 999-5403,owner269@example.com,Contractor 47,761895,60000
+P-2025-00270,Sacramento,Colfax,95165,Finaled,Electrical,Re-roof with shingles,09/09/2025,09/09/2026,Owner 270,(929) 790-2262,owner270@example.com,Contractor 32,938654,25000
+P-2025-00271,Placer,Lincoln,95261,Finaled,Building,Solar installation,03/24/2025,03/24/2026,Owner 271,(991) 305-2889,owner271@example.com,Contractor 15,966770,5000
+P-2025-00272,Nevada,Yuba City,95472,Expired,Building,New roof covering,09/02/2025,09/02/2026,Owner 272,(353) 383-1579,owner272@example.com,Contractor 36,919870,8000
+P-2025-00273,Sacramento,Roseville,95945,Issued,Roofing,Re-roof with shingles,04/13/2025,04/13/2026,Owner 273,(785) 581-2956,owner273@example.com,Contractor 33,727615,8000
+P-2025-00274,Yuba,Grass Valley,95998,Expired,Mechanical,Tear-off and replace roof,06/02/2025,06/02/2026,Owner 274,(489) 992-6090,owner274@example.com,Contractor 21,745290,25000
+P-2025-00275,Placer,Roseville,95677,Finaled,Building,New HVAC install,02/03/2025,02/03/2026,Owner 275,(957) 837-4974,owner275@example.com,Contractor 30,893081,25000
+P-2025-00276,Placer,Nevada City,95106,Expired,Roofing,Foundation repair,01/15/2025,01/15/2026,Owner 276,(224) 438-9872,owner276@example.com,Contractor 23,705030,12000
+P-2025-00277,Nevada,Rocklin,95642,In Progress,Plumbing,Panel upgrade,09/24/2025,09/24/2026,Owner 277,(629) 703-1981,owner277@example.com,Contractor 10,846709,5000
+P-2025-00278,Yuba,Lincoln,95569,Issued,Roofing,Foundation repair,09/02/2025,09/02/2026,Owner 278,(794) 297-9280,owner278@example.com,Contractor 9,906753,5000
+P-2025-00279,Yuba,Nevada City,95342,Finaled,Mechanical,Tear-off and replace roof,11/25/2024,11/25/2025,Owner 279,(467) 522-7438,owner279@example.com,Contractor 45,871049,12000
+P-2025-00280,Nevada,Rocklin,95239,Issued,Electrical,New roof covering,02/05/2025,02/05/2026,Owner 280,(359) 308-3693,owner280@example.com,Contractor 29,944347,12000
+P-2025-00281,Sacramento,Rocklin,95562,Finaled,Building,Foundation repair,02/28/2025,02/28/2026,Owner 281,(674) 471-2964,owner281@example.com,Contractor 6,782635,60000
+P-2025-00282,Nevada,Rocklin,95955,Finaled,Electrical,Room addition,10/08/2024,10/08/2025,Owner 282,(351) 293-5066,owner282@example.com,Contractor 23,907746,25000
+P-2025-00283,Placer,Auburn,95514,Expired,Electrical,Panel upgrade,08/30/2025,08/30/2026,Owner 283,(769) 966-5093,owner283@example.com,Contractor 7,942243,5000
+P-2025-00284,Nevada,Rocklin,95233,In Progress,Building,Tear-off and replace roof,07/15/2025,07/15/2026,Owner 284,(610) 581-2376,owner284@example.com,Contractor 38,835696,60000
+P-2025-00285,Placer,Yuba City,95928,In Progress,Building,Kitchen remodel,08/17/2025,08/17/2026,Owner 285,(294) 539-3007,owner285@example.com,Contractor 3,941694,5000
+P-2025-00286,Yuba,Yuba City,95130,Expired,Mechanical,Re-roof with shingles,06/30/2025,06/30/2026,Owner 286,(899) 636-3831,owner286@example.com,Contractor 23,812573,8000
+P-2025-00287,Placer,Auburn,95728,In Progress,Electrical,Solar installation,05/07/2025,05/07/2026,Owner 287,(862) 502-9173,owner287@example.com,Contractor 27,988719,15000
+P-2025-00288,Yuba,Nevada City,95529,In Progress,Building,Panel upgrade,08/24/2025,08/24/2026,Owner 288,(858) 738-5082,owner288@example.com,Contractor 41,985032,60000
+P-2025-00289,Yuba,Colfax,95900,Expired,Plumbing,New HVAC install,09/15/2025,09/15/2026,Owner 289,(552) 779-9231,owner289@example.com,Contractor 21,903623,12000
+P-2025-00290,Placer,Auburn,95930,Finaled,Building,New HVAC install,06/24/2025,06/24/2026,Owner 290,(259) 683-9674,owner290@example.com,Contractor 23,822034,8000
+P-2025-00291,Placer,Roseville,95646,Issued,Roofing,Garage conversion,08/04/2025,08/04/2026,Owner 291,(982) 424-7363,owner291@example.com,Contractor 23,791075,8000
+P-2025-00292,Sacramento,Auburn,95820,Finaled,Mechanical,New HVAC install,05/26/2025,05/26/2026,Owner 292,(781) 777-3328,owner292@example.com,Contractor 37,798688,60000
+P-2025-00293,Placer,Yuba City,95138,Issued,Mechanical,Panel upgrade,01/15/2025,01/15/2026,Owner 293,(257) 438-4584,owner293@example.com,Contractor 2,976010,15000
+P-2025-00294,Placer,Nevada City,95448,In Progress,Electrical,Room addition,09/24/2025,09/24/2026,Owner 294,(531) 260-1359,owner294@example.com,Contractor 10,774266,60000
+P-2025-00295,Nevada,Lincoln,95821,Expired,Mechanical,New HVAC install,07/30/2025,07/30/2026,Owner 295,(800) 303-6514,owner295@example.com,Contractor 20,869136,8000
+P-2025-00296,Yuba,Lincoln,95278,Finaled,Plumbing,Garage conversion,07/06/2025,07/06/2026,Owner 296,(428) 881-3872,owner296@example.com,Contractor 25,860863,40000
+P-2025-00297,Placer,Auburn,95818,Expired,Electrical,Bathroom remodel,10/07/2024,10/07/2025,Owner 297,(989) 781-1530,owner297@example.com,Contractor 12,866837,60000
+P-2025-00298,Nevada,Yuba City,95244,Finaled,Roofing,Garage conversion,11/15/2024,11/15/2025,Owner 298,(963) 279-4899,owner298@example.com,Contractor 23,867519,8000
+P-2025-00299,Sacramento,Yuba City,95111,Finaled,Building,Garage conversion,11/03/2024,11/03/2025,Owner 299,(414) 455-2110,owner299@example.com,Contractor 23,834562,60000
+P-2025-00300,Yuba,Yuba City,95850,Expired,Building,Tear-off and replace roof,07/31/2025,07/31/2026,Owner 300,(370) 623-9078,owner300@example.com,Contractor 25,884146,25000
+P-2025-00301,Placer,Nevada City,95562,Issued,Building,Solar installation,03/16/2025,03/16/2026,Owner 301,(234) 501-1328,owner301@example.com,Contractor 21,836906,5000
+P-2025-00302,Yuba,Nevada City,95849,Issued,Electrical,Bathroom remodel,08/18/2025,08/18/2026,Owner 302,(760) 295-6536,owner302@example.com,Contractor 39,953093,40000
+P-2025-00303,Placer,Sacramento,95260,Issued,Plumbing,Garage conversion,09/09/2025,09/09/2026,Owner 303,(303) 539-4367,owner303@example.com,Contractor 13,914580,40000
+P-2025-00304,Sacramento,Roseville,95343,Issued,Mechanical,Panel upgrade,12/15/2024,12/15/2025,Owner 304,(250) 602-9043,owner304@example.com,Contractor 10,728576,12000
+P-2025-00305,Sacramento,Yuba City,95304,Issued,Plumbing,Kitchen remodel,09/23/2025,09/23/2026,Owner 305,(226) 411-3798,owner305@example.com,Contractor 41,852993,5000
+P-2025-00306,Yuba,Yuba City,95600,Finaled,Building,Panel upgrade,01/25/2025,01/25/2026,Owner 306,(293) 857-9914,owner306@example.com,Contractor 25,796931,12000
+P-2025-00307,Yuba,Auburn,95369,Expired,Electrical,Bathroom remodel,03/13/2025,03/13/2026,Owner 307,(676) 469-4706,owner307@example.com,Contractor 18,995827,5000
+P-2025-00308,Sacramento,Colfax,95523,In Progress,Building,Kitchen remodel,07/09/2025,07/09/2026,Owner 308,(766) 262-7342,owner308@example.com,Contractor 34,919483,25000
+P-2025-00309,Placer,Yuba City,95406,Issued,Plumbing,Room addition,10/08/2024,10/08/2025,Owner 309,(604) 931-1568,owner309@example.com,Contractor 33,999483,25000
+P-2025-00310,Nevada,Yuba City,95277,In Progress,Mechanical,Bathroom remodel,12/06/2024,12/06/2025,Owner 310,(416) 397-3067,owner310@example.com,Contractor 3,921970,5000
+P-2025-00311,Placer,Roseville,95427,Issued,Plumbing,New roof covering,10/10/2024,10/10/2025,Owner 311,(289) 597-7510,owner311@example.com,Contractor 36,870984,60000
+P-2025-00312,Nevada,Colfax,95900,Expired,Mechanical,Solar installation,05/06/2025,05/06/2026,Owner 312,(315) 624-3451,owner312@example.com,Contractor 10,997058,25000
+P-2025-00313,Nevada,Roseville,95988,Finaled,Building,Kitchen remodel,11/30/2024,11/30/2025,Owner 313,(620) 470-7275,owner313@example.com,Contractor 42,954586,25000
+P-2025-00314,Placer,Roseville,95512,In Progress,Plumbing,Tear-off and replace roof,11/17/2024,11/17/2025,Owner 314,(833) 823-7581,owner314@example.com,Contractor 3,907509,12000
+P-2025-00315,Yuba,Roseville,95481,Issued,Roofing,Tear-off and replace roof,10/06/2024,10/06/2025,Owner 315,(545) 510-6094,owner315@example.com,Contractor 18,957750,60000
+P-2025-00316,Placer,Roseville,95861,Expired,Building,New roof covering,10/03/2024,10/03/2025,Owner 316,(992) 528-5414,owner316@example.com,Contractor 47,918508,25000
+P-2025-00317,Yuba,Rocklin,95943,Expired,Building,New roof covering,10/29/2024,10/29/2025,Owner 317,(958) 696-9462,owner317@example.com,Contractor 24,729468,25000
+P-2025-00318,Yuba,Nevada City,95899,Issued,Building,Panel upgrade,07/05/2025,07/05/2026,Owner 318,(377) 397-4288,owner318@example.com,Contractor 4,830804,5000
+P-2025-00319,Placer,Roseville,95477,Expired,Building,New HVAC install,02/03/2025,02/03/2026,Owner 319,(717) 606-3029,owner319@example.com,Contractor 44,716023,8000
+P-2025-00320,Yuba,Nevada City,95991,Expired,Plumbing,Room addition,03/18/2025,03/18/2026,Owner 320,(800) 764-6730,owner320@example.com,Contractor 23,785728,60000
+P-2025-00321,Nevada,Sacramento,95150,In Progress,Building,Panel upgrade,05/15/2025,05/15/2026,Owner 321,(785) 998-4511,owner321@example.com,Contractor 15,818023,40000
+P-2025-00322,Yuba,Colfax,95120,Issued,Electrical,Garage conversion,06/11/2025,06/11/2026,Owner 322,(685) 335-3837,owner322@example.com,Contractor 39,704437,8000
+P-2025-00323,Sacramento,Sacramento,95485,Finaled,Mechanical,Panel upgrade,05/18/2025,05/18/2026,Owner 323,(670) 458-4575,owner323@example.com,Contractor 30,858411,40000
+P-2025-00324,Nevada,Auburn,95623,Finaled,Mechanical,Re-roof with shingles,01/01/2025,01/01/2026,Owner 324,(774) 862-5631,owner324@example.com,Contractor 20,756677,15000
+P-2025-00325,Sacramento,Roseville,95367,Finaled,Electrical,Panel upgrade,08/23/2025,08/23/2026,Owner 325,(392) 353-9475,owner325@example.com,Contractor 49,825987,5000
+P-2025-00326,Sacramento,Nevada City,95838,Issued,Plumbing,Garage conversion,11/21/2024,11/21/2025,Owner 326,(871) 709-5843,owner326@example.com,Contractor 17,919448,15000
+P-2025-00327,Placer,Lincoln,95843,In Progress,Building,Room addition,03/10/2025,03/10/2026,Owner 327,(902) 747-8794,owner327@example.com,Contractor 43,887955,25000
+P-2025-00328,Placer,Roseville,95199,Expired,Roofing,Garage conversion,04/24/2025,04/24/2026,Owner 328,(331) 958-5237,owner328@example.com,Contractor 47,993093,60000
+P-2025-00329,Nevada,Rocklin,95463,In Progress,Electrical,Garage conversion,06/23/2025,06/23/2026,Owner 329,(962) 514-7889,owner329@example.com,Contractor 22,894868,12000
+P-2025-00330,Nevada,Yuba City,95154,Issued,Electrical,Solar installation,11/29/2024,11/29/2025,Owner 330,(683) 399-9199,owner330@example.com,Contractor 8,900104,25000
+P-2025-00331,Placer,Nevada City,95305,Finaled,Plumbing,Tear-off and replace roof,04/25/2025,04/25/2026,Owner 331,(619) 783-8496,owner331@example.com,Contractor 10,865876,60000
+P-2025-00332,Sacramento,Nevada City,95420,Issued,Building,Solar installation,06/24/2025,06/24/2026,Owner 332,(204) 662-5481,owner332@example.com,Contractor 14,788397,25000
+P-2025-00333,Placer,Sacramento,95748,Expired,Plumbing,Kitchen remodel,07/05/2025,07/05/2026,Owner 333,(613) 639-8821,owner333@example.com,Contractor 25,702447,5000
+P-2025-00334,Nevada,Lincoln,95875,In Progress,Roofing,New HVAC install,12/25/2024,12/25/2025,Owner 334,(218) 892-1067,owner334@example.com,Contractor 41,830454,8000
+P-2025-00335,Placer,Grass Valley,95492,Finaled,Electrical,Panel upgrade,10/04/2024,10/04/2025,Owner 335,(371) 266-1749,owner335@example.com,Contractor 20,852477,15000
+P-2025-00336,Sacramento,Sacramento,95803,In Progress,Mechanical,Foundation repair,01/01/2025,01/01/2026,Owner 336,(550) 701-6885,owner336@example.com,Contractor 49,798789,8000
+P-2025-00337,Placer,Nevada City,95316,Issued,Building,New roof covering,03/02/2025,03/02/2026,Owner 337,(803) 716-3768,owner337@example.com,Contractor 8,892199,40000
+P-2025-00338,Sacramento,Colfax,95738,Issued,Building,Re-roof with shingles,10/26/2024,10/26/2025,Owner 338,(808) 249-2771,owner338@example.com,Contractor 42,710350,5000
+P-2025-00339,Yuba,Sacramento,95226,Finaled,Building,Re-roof with shingles,10/06/2024,10/06/2025,Owner 339,(685) 918-3508,owner339@example.com,Contractor 14,704878,12000
+P-2025-00340,Sacramento,Nevada City,95528,Issued,Building,Garage conversion,02/21/2025,02/21/2026,Owner 340,(723) 936-2928,owner340@example.com,Contractor 19,759775,60000
+P-2025-00341,Placer,Roseville,95951,In Progress,Plumbing,New roof covering,08/01/2025,08/01/2026,Owner 341,(566) 920-7713,owner341@example.com,Contractor 19,784081,5000
+P-2025-00342,Yuba,Lincoln,95340,Issued,Plumbing,New roof covering,12/18/2024,12/18/2025,Owner 342,(213) 887-2458,owner342@example.com,Contractor 8,959052,8000
+P-2025-00343,Nevada,Roseville,95759,In Progress,Mechanical,Kitchen remodel,08/09/2025,08/09/2026,Owner 343,(667) 503-5327,owner343@example.com,Contractor 30,726256,5000
+P-2025-00344,Sacramento,Lincoln,95536,Issued,Building,Panel upgrade,06/27/2025,06/27/2026,Owner 344,(297) 976-1751,owner344@example.com,Contractor 1,772558,40000
+P-2025-00345,Sacramento,Yuba City,95736,Finaled,Roofing,New HVAC install,10/28/2024,10/28/2025,Owner 345,(950) 295-7105,owner345@example.com,Contractor 22,795876,5000
+P-2025-00346,Sacramento,Sacramento,95806,Expired,Plumbing,Solar installation,03/03/2025,03/03/2026,Owner 346,(631) 864-3732,owner346@example.com,Contractor 8,769474,40000
+P-2025-00347,Yuba,Yuba City,95921,Expired,Roofing,Kitchen remodel,08/25/2025,08/25/2026,Owner 347,(385) 825-7221,owner347@example.com,Contractor 50,888009,25000
+P-2025-00348,Yuba,Grass Valley,95521,Expired,Roofing,Solar installation,09/10/2025,09/10/2026,Owner 348,(247) 264-5286,owner348@example.com,Contractor 42,864751,5000
+P-2025-00349,Placer,Lincoln,95631,Issued,Mechanical,Room addition,09/29/2024,09/29/2025,Owner 349,(643) 877-5072,owner349@example.com,Contractor 31,881272,40000
+P-2025-00350,Nevada,Auburn,95758,In Progress,Plumbing,Bathroom remodel,10/13/2024,10/13/2025,Owner 350,(717) 680-9123,owner350@example.com,Contractor 11,739250,60000
+P-2025-00351,Sacramento,Roseville,95151,In Progress,Electrical,New roof covering,01/16/2025,01/16/2026,Owner 351,(763) 858-7203,owner351@example.com,Contractor 26,823207,5000
+P-2025-00352,Yuba,Grass Valley,95977,Expired,Plumbing,Room addition,02/01/2025,02/01/2026,Owner 352,(657) 523-2944,owner352@example.com,Contractor 32,709316,5000
+P-2025-00353,Nevada,Grass Valley,95910,Finaled,Plumbing,Tear-off and replace roof,03/02/2025,03/02/2026,Owner 353,(720) 775-4389,owner353@example.com,Contractor 42,939184,12000
+P-2025-00354,Yuba,Lincoln,95673,Expired,Building,New roof covering,03/22/2025,03/22/2026,Owner 354,(933) 872-6952,owner354@example.com,Contractor 46,937257,5000
+P-2025-00355,Sacramento,Lincoln,95949,Finaled,Roofing,Tear-off and replace roof,08/06/2025,08/06/2026,Owner 355,(760) 734-7125,owner355@example.com,Contractor 45,755743,5000
+P-2025-00356,Yuba,Grass Valley,95360,In Progress,Plumbing,Bathroom remodel,07/02/2025,07/02/2026,Owner 356,(392) 323-7437,owner356@example.com,Contractor 14,939623,60000
+P-2025-00357,Yuba,Auburn,95748,Issued,Electrical,Kitchen remodel,06/19/2025,06/19/2026,Owner 357,(990) 661-8493,owner357@example.com,Contractor 43,964344,8000
+P-2025-00358,Nevada,Colfax,95543,Expired,Building,Foundation repair,01/12/2025,01/12/2026,Owner 358,(720) 999-3903,owner358@example.com,Contractor 45,791042,40000
+P-2025-00359,Sacramento,Colfax,95493,Expired,Building,Re-roof with shingles,07/21/2025,07/21/2026,Owner 359,(823) 909-5067,owner359@example.com,Contractor 18,908598,12000
+P-2025-00360,Placer,Sacramento,95716,Finaled,Plumbing,Bathroom remodel,04/27/2025,04/27/2026,Owner 360,(918) 760-6143,owner360@example.com,Contractor 46,990236,40000
+P-2025-00361,Sacramento,Lincoln,95788,In Progress,Roofing,New roof covering,06/05/2025,06/05/2026,Owner 361,(927) 865-3913,owner361@example.com,Contractor 33,984421,40000
+P-2025-00362,Sacramento,Colfax,95591,Expired,Electrical,Kitchen remodel,11/02/2024,11/02/2025,Owner 362,(890) 965-9747,owner362@example.com,Contractor 19,921452,60000
+P-2025-00363,Nevada,Sacramento,95248,Issued,Mechanical,Kitchen remodel,09/18/2025,09/18/2026,Owner 363,(886) 257-4275,owner363@example.com,Contractor 18,784376,12000
+P-2025-00364,Nevada,Roseville,95308,Issued,Electrical,Bathroom remodel,10/10/2024,10/10/2025,Owner 364,(567) 663-2679,owner364@example.com,Contractor 40,994589,60000
+P-2025-00365,Placer,Colfax,95903,Finaled,Mechanical,Re-roof with shingles,06/02/2025,06/02/2026,Owner 365,(909) 880-1769,owner365@example.com,Contractor 25,903190,15000
+P-2025-00366,Nevada,Auburn,95861,Finaled,Electrical,Foundation repair,10/09/2024,10/09/2025,Owner 366,(407) 835-8259,owner366@example.com,Contractor 15,892802,60000
+P-2025-00367,Placer,Rocklin,95401,Expired,Mechanical,Room addition,11/27/2024,11/27/2025,Owner 367,(381) 899-2220,owner367@example.com,Contractor 12,791118,40000
+P-2025-00368,Nevada,Sacramento,95385,Finaled,Building,Re-roof with shingles,01/04/2025,01/04/2026,Owner 368,(333) 364-5178,owner368@example.com,Contractor 1,873310,15000
+P-2025-00369,Placer,Lincoln,95711,Issued,Roofing,Tear-off and replace roof,09/26/2024,09/26/2025,Owner 369,(992) 840-5934,owner369@example.com,Contractor 32,988442,12000
+P-2025-00370,Placer,Nevada City,95633,Issued,Electrical,Foundation repair,08/18/2025,08/18/2026,Owner 370,(717) 363-7814,owner370@example.com,Contractor 35,981561,15000
+P-2025-00371,Placer,Lincoln,95439,Finaled,Electrical,New roof covering,08/08/2025,08/08/2026,Owner 371,(500) 423-9691,owner371@example.com,Contractor 31,994301,60000
+P-2025-00372,Sacramento,Yuba City,95346,In Progress,Building,Kitchen remodel,10/27/2024,10/27/2025,Owner 372,(240) 898-6258,owner372@example.com,Contractor 25,759440,15000
+P-2025-00373,Nevada,Colfax,95941,Finaled,Mechanical,Panel upgrade,05/16/2025,05/16/2026,Owner 373,(726) 720-8300,owner373@example.com,Contractor 32,722990,12000
+P-2025-00374,Nevada,Grass Valley,95271,Issued,Roofing,New HVAC install,10/26/2024,10/26/2025,Owner 374,(841) 267-4453,owner374@example.com,Contractor 43,811765,60000
+P-2025-00375,Placer,Colfax,95948,Expired,Plumbing,Kitchen remodel,10/09/2024,10/09/2025,Owner 375,(862) 273-3519,owner375@example.com,Contractor 2,940766,40000
+P-2025-00376,Nevada,Auburn,95282,Finaled,Building,Kitchen remodel,04/08/2025,04/08/2026,Owner 376,(771) 272-4729,owner376@example.com,Contractor 17,913716,15000
+P-2025-00377,Sacramento,Auburn,95498,Issued,Plumbing,Re-roof with shingles,02/06/2025,02/06/2026,Owner 377,(747) 206-2036,owner377@example.com,Contractor 49,723863,40000
+P-2025-00378,Nevada,Roseville,95905,Finaled,Electrical,Foundation repair,08/18/2025,08/18/2026,Owner 378,(821) 288-5612,owner378@example.com,Contractor 49,929468,15000
+P-2025-00379,Placer,Colfax,95325,In Progress,Building,Solar installation,03/06/2025,03/06/2026,Owner 379,(964) 600-9941,owner379@example.com,Contractor 19,775537,12000
+P-2025-00380,Placer,Grass Valley,95142,Issued,Electrical,Tear-off and replace roof,10/13/2024,10/13/2025,Owner 380,(786) 810-7456,owner380@example.com,Contractor 35,987061,5000
+P-2025-00381,Placer,Sacramento,95761,In Progress,Roofing,New HVAC install,04/21/2025,04/21/2026,Owner 381,(364) 388-4617,owner381@example.com,Contractor 40,832509,8000
+P-2025-00382,Nevada,Colfax,95572,Issued,Roofing,Garage conversion,07/28/2025,07/28/2026,Owner 382,(497) 887-2103,owner382@example.com,Contractor 17,751486,8000
+P-2025-00383,Sacramento,Nevada City,95787,In Progress,Plumbing,New HVAC install,12/01/2024,12/01/2025,Owner 383,(302) 491-2143,owner383@example.com,Contractor 13,866611,15000
+P-2025-00384,Sacramento,Nevada City,95679,Finaled,Electrical,Room addition,02/06/2025,02/06/2026,Owner 384,(523) 638-3762,owner384@example.com,Contractor 1,864214,8000
+P-2025-00385,Sacramento,Nevada City,95795,Finaled,Plumbing,Panel upgrade,06/03/2025,06/03/2026,Owner 385,(691) 673-8296,owner385@example.com,Contractor 23,860155,15000
+P-2025-00386,Nevada,Roseville,95979,In Progress,Building,Bathroom remodel,12/16/2024,12/16/2025,Owner 386,(751) 401-5312,owner386@example.com,Contractor 47,740088,40000
+P-2025-00387,Nevada,Sacramento,95887,In Progress,Building,Foundation repair,08/17/2025,08/17/2026,Owner 387,(237) 764-5269,owner387@example.com,Contractor 35,982946,15000
+P-2025-00388,Yuba,Rocklin,95890,Finaled,Roofing,New HVAC install,10/25/2024,10/25/2025,Owner 388,(337) 675-9210,owner388@example.com,Contractor 33,747476,15000
+P-2025-00389,Placer,Nevada City,95875,In Progress,Mechanical,Tear-off and replace roof,03/22/2025,03/22/2026,Owner 389,(656) 363-3935,owner389@example.com,Contractor 37,996648,40000
+P-2025-00390,Nevada,Rocklin,95879,Expired,Plumbing,New HVAC install,07/12/2025,07/12/2026,Owner 390,(437) 264-5331,owner390@example.com,Contractor 24,822693,5000
+P-2025-00391,Sacramento,Sacramento,95580,Expired,Roofing,Foundation repair,10/17/2024,10/17/2025,Owner 391,(247) 240-6309,owner391@example.com,Contractor 7,973349,40000
+P-2025-00392,Placer,Sacramento,95769,Expired,Electrical,Room addition,05/07/2025,05/07/2026,Owner 392,(574) 801-2275,owner392@example.com,Contractor 34,831903,15000
+P-2025-00393,Sacramento,Lincoln,95598,Expired,Mechanical,Re-roof with shingles,06/02/2025,06/02/2026,Owner 393,(818) 206-9222,owner393@example.com,Contractor 9,930633,8000
+P-2025-00394,Sacramento,Rocklin,95253,In Progress,Building,Foundation repair,05/30/2025,05/30/2026,Owner 394,(361) 570-2938,owner394@example.com,Contractor 43,820767,15000
+P-2025-00395,Yuba,Yuba City,95315,In Progress,Building,Solar installation,04/08/2025,04/08/2026,Owner 395,(862) 620-1367,owner395@example.com,Contractor 16,722620,8000
+P-2025-00396,Placer,Colfax,95140,In Progress,Mechanical,Bathroom remodel,12/05/2024,12/05/2025,Owner 396,(257) 370-5231,owner396@example.com,Contractor 12,970868,15000
+P-2025-00397,Nevada,Roseville,95187,In Progress,Mechanical,Garage conversion,11/22/2024,11/22/2025,Owner 397,(659) 821-8723,owner397@example.com,Contractor 31,789426,8000
+P-2025-00398,Placer,Colfax,95370,In Progress,Mechanical,Bathroom remodel,02/26/2025,02/26/2026,Owner 398,(941) 902-6614,owner398@example.com,Contractor 30,736093,8000
+P-2025-00399,Nevada,Auburn,95307,Expired,Plumbing,Bathroom remodel,03/15/2025,03/15/2026,Owner 399,(353) 820-2577,owner399@example.com,Contractor 12,949492,25000
+P-2025-00400,Nevada,Grass Valley,95593,In Progress,Building,Foundation repair,11/21/2024,11/21/2025,Owner 400,(817) 752-1019,owner400@example.com,Contractor 50,926228,25000
+P-2025-00401,Yuba,Rocklin,95921,Expired,Electrical,Tear-off and replace roof,02/21/2025,02/21/2026,Owner 401,(987) 590-6742,owner401@example.com,Contractor 38,751231,15000
+P-2025-00402,Placer,Grass Valley,95390,Expired,Electrical,Solar installation,07/18/2025,07/18/2026,Owner 402,(463) 393-1089,owner402@example.com,Contractor 46,703729,25000
+P-2025-00403,Nevada,Sacramento,95770,In Progress,Building,Foundation repair,12/31/2024,12/31/2025,Owner 403,(904) 523-7698,owner403@example.com,Contractor 24,755880,8000
+P-2025-00404,Sacramento,Colfax,95533,Finaled,Mechanical,Panel upgrade,02/18/2025,02/18/2026,Owner 404,(826) 482-7511,owner404@example.com,Contractor 49,806794,15000
+P-2025-00405,Placer,Lincoln,95672,Expired,Mechanical,Solar installation,12/16/2024,12/16/2025,Owner 405,(459) 514-6641,owner405@example.com,Contractor 50,908734,40000
+P-2025-00406,Yuba,Nevada City,95202,In Progress,Building,New roof covering,07/16/2025,07/16/2026,Owner 406,(720) 610-6544,owner406@example.com,Contractor 36,727290,8000
+P-2025-00407,Placer,Yuba City,95714,Expired,Building,Kitchen remodel,03/09/2025,03/09/2026,Owner 407,(290) 265-5310,owner407@example.com,Contractor 15,894424,5000
+P-2025-00408,Yuba,Colfax,95393,Issued,Building,Re-roof with shingles,11/17/2024,11/17/2025,Owner 408,(992) 379-9099,owner408@example.com,Contractor 29,705615,8000
+P-2025-00409,Placer,Auburn,95902,In Progress,Mechanical,Panel upgrade,10/23/2024,10/23/2025,Owner 409,(829) 373-1590,owner409@example.com,Contractor 24,825439,40000
+P-2025-00410,Sacramento,Sacramento,95461,Expired,Roofing,Kitchen remodel,09/24/2025,09/24/2026,Owner 410,(615) 800-4281,owner410@example.com,Contractor 34,708056,40000
+P-2025-00411,Sacramento,Colfax,95696,Finaled,Building,Kitchen remodel,09/29/2024,09/29/2025,Owner 411,(555) 483-4707,owner411@example.com,Contractor 39,801987,15000
+P-2025-00412,Sacramento,Nevada City,95516,Issued,Mechanical,Tear-off and replace roof,03/02/2025,03/02/2026,Owner 412,(772) 274-9243,owner412@example.com,Contractor 19,878240,5000
+P-2025-00413,Sacramento,Yuba City,95486,Expired,Electrical,Foundation repair,01/05/2025,01/05/2026,Owner 413,(988) 449-6565,owner413@example.com,Contractor 50,940568,40000
+P-2025-00414,Yuba,Grass Valley,95364,Issued,Mechanical,Tear-off and replace roof,02/01/2025,02/01/2026,Owner 414,(591) 848-4610,owner414@example.com,Contractor 44,820549,60000
+P-2025-00415,Nevada,Roseville,95354,Finaled,Plumbing,New HVAC install,04/16/2025,04/16/2026,Owner 415,(295) 608-6603,owner415@example.com,Contractor 5,990744,8000
+P-2025-00416,Placer,Roseville,95287,In Progress,Electrical,New HVAC install,01/24/2025,01/24/2026,Owner 416,(710) 954-4271,owner416@example.com,Contractor 16,826907,60000
+P-2025-00417,Placer,Rocklin,95956,Finaled,Roofing,New roof covering,05/12/2025,05/12/2026,Owner 417,(359) 997-2747,owner417@example.com,Contractor 8,741150,40000
+P-2025-00418,Nevada,Colfax,95143,Expired,Plumbing,Room addition,10/20/2024,10/20/2025,Owner 418,(580) 835-6167,owner418@example.com,Contractor 32,844039,15000
+P-2025-00419,Yuba,Rocklin,95868,In Progress,Mechanical,Panel upgrade,06/23/2025,06/23/2026,Owner 419,(255) 738-7933,owner419@example.com,Contractor 31,983518,5000
+P-2025-00420,Placer,Yuba City,95223,Expired,Electrical,Re-roof with shingles,01/10/2025,01/10/2026,Owner 420,(523) 905-1137,owner420@example.com,Contractor 1,810494,15000
+P-2025-00421,Sacramento,Roseville,95291,Finaled,Building,New HVAC install,12/01/2024,12/01/2025,Owner 421,(442) 475-8722,owner421@example.com,Contractor 40,879881,12000
+P-2025-00422,Placer,Sacramento,95817,Finaled,Plumbing,Re-roof with shingles,06/22/2025,06/22/2026,Owner 422,(573) 610-5581,owner422@example.com,Contractor 29,794313,25000
+P-2025-00423,Placer,Grass Valley,95838,Finaled,Mechanical,Garage conversion,07/19/2025,07/19/2026,Owner 423,(441) 768-8081,owner423@example.com,Contractor 25,802793,8000
+P-2025-00424,Placer,Sacramento,95611,In Progress,Plumbing,Tear-off and replace roof,07/10/2025,07/10/2026,Owner 424,(845) 729-9748,owner424@example.com,Contractor 47,865532,60000
+P-2025-00425,Nevada,Sacramento,95201,In Progress,Electrical,Panel upgrade,01/18/2025,01/18/2026,Owner 425,(261) 420-5166,owner425@example.com,Contractor 31,750489,15000
+P-2025-00426,Sacramento,Colfax,95670,Finaled,Electrical,New HVAC install,04/06/2025,04/06/2026,Owner 426,(552) 220-7746,owner426@example.com,Contractor 8,884072,60000
+P-2025-00427,Placer,Roseville,95463,Finaled,Mechanical,New roof covering,10/12/2024,10/12/2025,Owner 427,(889) 722-8987,owner427@example.com,Contractor 50,934320,5000
+P-2025-00428,Yuba,Nevada City,95989,In Progress,Mechanical,Panel upgrade,03/13/2025,03/13/2026,Owner 428,(855) 545-7911,owner428@example.com,Contractor 41,999702,15000
+P-2025-00429,Sacramento,Rocklin,95421,Finaled,Building,Bathroom remodel,08/19/2025,08/19/2026,Owner 429,(868) 498-5382,owner429@example.com,Contractor 39,907332,12000
+P-2025-00430,Yuba,Sacramento,95271,In Progress,Electrical,Room addition,02/09/2025,02/09/2026,Owner 430,(223) 328-4844,owner430@example.com,Contractor 43,831935,40000
+P-2025-00431,Placer,Sacramento,95205,Issued,Building,New roof covering,10/01/2024,10/01/2025,Owner 431,(265) 684-9985,owner431@example.com,Contractor 4,713822,60000
+P-2025-00432,Nevada,Roseville,95732,In Progress,Mechanical,Kitchen remodel,03/05/2025,03/05/2026,Owner 432,(286) 870-7387,owner432@example.com,Contractor 20,820248,8000
+P-2025-00433,Placer,Nevada City,95639,In Progress,Plumbing,Garage conversion,05/02/2025,05/02/2026,Owner 433,(229) 235-6846,owner433@example.com,Contractor 21,949642,15000
+P-2025-00434,Yuba,Nevada City,95814,In Progress,Electrical,Foundation repair,12/22/2024,12/22/2025,Owner 434,(805) 811-8480,owner434@example.com,Contractor 41,995690,15000
+P-2025-00435,Sacramento,Yuba City,95652,In Progress,Mechanical,Panel upgrade,12/30/2024,12/30/2025,Owner 435,(291) 652-6044,owner435@example.com,Contractor 24,916113,12000
+P-2025-00436,Nevada,Colfax,95934,In Progress,Electrical,Tear-off and replace roof,07/07/2025,07/07/2026,Owner 436,(552) 493-8687,owner436@example.com,Contractor 35,704360,40000
+P-2025-00437,Nevada,Sacramento,95917,Finaled,Plumbing,Panel upgrade,01/16/2025,01/16/2026,Owner 437,(811) 436-1118,owner437@example.com,Contractor 36,895897,8000
+P-2025-00438,Yuba,Rocklin,95267,Expired,Mechanical,Re-roof with shingles,02/26/2025,02/26/2026,Owner 438,(587) 425-5308,owner438@example.com,Contractor 6,921375,40000
+P-2025-00439,Sacramento,Roseville,95764,Finaled,Mechanical,Room addition,05/25/2025,05/25/2026,Owner 439,(622) 392-2121,owner439@example.com,Contractor 12,771630,12000
+P-2025-00440,Yuba,Roseville,95817,Expired,Plumbing,Room addition,07/30/2025,07/30/2026,Owner 440,(392) 528-1317,owner440@example.com,Contractor 10,726021,25000
+P-2025-00441,Sacramento,Roseville,95228,Expired,Roofing,Kitchen remodel,09/13/2025,09/13/2026,Owner 441,(944) 208-4814,owner441@example.com,Contractor 6,779001,5000
+P-2025-00442,Yuba,Roseville,95904,Expired,Roofing,New HVAC install,01/15/2025,01/15/2026,Owner 442,(580) 674-1519,owner442@example.com,Contractor 22,742060,60000
+P-2025-00443,Yuba,Grass Valley,95656,Expired,Building,Panel upgrade,07/12/2025,07/12/2026,Owner 443,(385) 396-5097,owner443@example.com,Contractor 25,706614,5000
+P-2025-00444,Yuba,Rocklin,95855,Issued,Roofing,Re-roof with shingles,09/24/2024,09/24/2025,Owner 444,(403) 671-2539,owner444@example.com,Contractor 34,809286,15000
+P-2025-00445,Placer,Auburn,95862,Issued,Electrical,New HVAC install,03/09/2025,03/09/2026,Owner 445,(459) 692-5895,owner445@example.com,Contractor 13,888967,5000
+P-2025-00446,Placer,Sacramento,95432,Issued,Roofing,Kitchen remodel,10/18/2024,10/18/2025,Owner 446,(371) 482-2960,owner446@example.com,Contractor 26,827448,5000
+P-2025-00447,Placer,Lincoln,95889,Issued,Mechanical,Solar installation,09/03/2025,09/03/2026,Owner 447,(454) 361-9190,owner447@example.com,Contractor 6,877430,60000
+P-2025-00448,Sacramento,Nevada City,95818,Issued,Building,Tear-off and replace roof,11/08/2024,11/08/2025,Owner 448,(328) 699-4812,owner448@example.com,Contractor 21,992736,60000
+P-2025-00449,Placer,Auburn,95805,Expired,Electrical,Solar installation,10/29/2024,10/29/2025,Owner 449,(566) 941-3207,owner449@example.com,Contractor 17,720703,15000
+P-2025-00450,Sacramento,Colfax,95813,Expired,Plumbing,Foundation repair,09/28/2024,09/28/2025,Owner 450,(394) 780-4057,owner450@example.com,Contractor 35,882276,12000
+P-2025-00451,Placer,Grass Valley,95643,In Progress,Electrical,Room addition,01/28/2025,01/28/2026,Owner 451,(660) 502-5314,owner451@example.com,Contractor 35,892472,15000
+P-2025-00452,Placer,Auburn,95734,Finaled,Mechanical,Re-roof with shingles,09/24/2025,09/24/2026,Owner 452,(994) 835-4912,owner452@example.com,Contractor 21,733209,40000
+P-2025-00453,Yuba,Colfax,95257,Finaled,Plumbing,New roof covering,12/23/2024,12/23/2025,Owner 453,(530) 619-6276,owner453@example.com,Contractor 8,750466,25000
+P-2025-00454,Placer,Nevada City,95994,Issued,Building,Tear-off and replace roof,10/22/2024,10/22/2025,Owner 454,(406) 309-8952,owner454@example.com,Contractor 13,751775,5000
+P-2025-00455,Yuba,Colfax,95738,Finaled,Plumbing,Garage conversion,12/06/2024,12/06/2025,Owner 455,(250) 575-4616,owner455@example.com,Contractor 39,737158,5000
+P-2025-00456,Yuba,Auburn,95469,Expired,Plumbing,Kitchen remodel,06/10/2025,06/10/2026,Owner 456,(577) 925-1955,owner456@example.com,Contractor 40,839363,25000
+P-2025-00457,Nevada,Rocklin,95631,Issued,Building,Panel upgrade,09/04/2025,09/04/2026,Owner 457,(303) 942-4784,owner457@example.com,Contractor 35,902024,8000
+P-2025-00458,Placer,Nevada City,95671,Expired,Mechanical,Garage conversion,06/18/2025,06/18/2026,Owner 458,(964) 308-6864,owner458@example.com,Contractor 44,940501,40000
+P-2025-00459,Placer,Nevada City,95663,Expired,Plumbing,Kitchen remodel,10/19/2024,10/19/2025,Owner 459,(716) 545-3591,owner459@example.com,Contractor 35,932265,12000
+P-2025-00460,Sacramento,Sacramento,95882,Expired,Mechanical,New HVAC install,04/16/2025,04/16/2026,Owner 460,(943) 531-4943,owner460@example.com,Contractor 37,986065,8000
+P-2025-00461,Sacramento,Yuba City,95558,Expired,Mechanical,Panel upgrade,03/16/2025,03/16/2026,Owner 461,(200) 943-1567,owner461@example.com,Contractor 19,708547,25000
+P-2025-00462,Sacramento,Rocklin,95319,Finaled,Electrical,Tear-off and replace roof,07/17/2025,07/17/2026,Owner 462,(222) 990-5521,owner462@example.com,Contractor 36,968053,25000
+P-2025-00463,Nevada,Auburn,95571,Finaled,Mechanical,Bathroom remodel,12/06/2024,12/06/2025,Owner 463,(359) 341-5341,owner463@example.com,Contractor 24,830996,8000
+P-2025-00464,Yuba,Rocklin,95851,Issued,Electrical,Kitchen remodel,05/16/2025,05/16/2026,Owner 464,(940) 532-8905,owner464@example.com,Contractor 12,955997,60000
+P-2025-00465,Sacramento,Auburn,95848,Expired,Mechanical,Kitchen remodel,10/06/2024,10/06/2025,Owner 465,(280) 998-1916,owner465@example.com,Contractor 50,875316,12000
+P-2025-00466,Placer,Auburn,95749,Expired,Plumbing,Kitchen remodel,02/14/2025,02/14/2026,Owner 466,(255) 512-9591,owner466@example.com,Contractor 3,867413,25000
+P-2025-00467,Placer,Nevada City,95151,Expired,Roofing,New HVAC install,12/09/2024,12/09/2025,Owner 467,(656) 970-9269,owner467@example.com,Contractor 6,816436,15000
+P-2025-00468,Placer,Lincoln,95184,Expired,Plumbing,Bathroom remodel,04/29/2025,04/29/2026,Owner 468,(785) 963-1807,owner468@example.com,Contractor 36,909291,12000
+P-2025-00469,Yuba,Nevada City,95880,In Progress,Plumbing,Foundation repair,08/12/2025,08/12/2026,Owner 469,(692) 772-4245,owner469@example.com,Contractor 32,907260,40000
+P-2025-00470,Placer,Rocklin,95173,Finaled,Roofing,Foundation repair,12/06/2024,12/06/2025,Owner 470,(995) 640-6298,owner470@example.com,Contractor 44,746973,5000
+P-2025-00471,Sacramento,Lincoln,95295,Finaled,Plumbing,Re-roof with shingles,10/16/2024,10/16/2025,Owner 471,(552) 808-1396,owner471@example.com,Contractor 50,859812,8000
+P-2025-00472,Placer,Yuba City,95145,In Progress,Mechanical,Solar installation,03/29/2025,03/29/2026,Owner 472,(404) 901-7124,owner472@example.com,Contractor 10,744991,5000
+P-2025-00473,Placer,Roseville,95114,Finaled,Roofing,Room addition,08/28/2025,08/28/2026,Owner 473,(910) 313-5999,owner473@example.com,Contractor 29,947039,5000
+P-2025-00474,Placer,Rocklin,95659,Finaled,Roofing,Foundation repair,04/08/2025,04/08/2026,Owner 474,(761) 694-3315,owner474@example.com,Contractor 45,709640,15000
+P-2025-00475,Sacramento,Nevada City,95161,Finaled,Mechanical,Tear-off and replace roof,11/30/2024,11/30/2025,Owner 475,(405) 913-5444,owner475@example.com,Contractor 4,943773,40000
+P-2025-00476,Sacramento,Lincoln,95985,Issued,Building,Re-roof with shingles,09/20/2025,09/20/2026,Owner 476,(219) 499-7332,owner476@example.com,Contractor 15,899597,25000
+P-2025-00477,Yuba,Colfax,95190,In Progress,Building,New HVAC install,09/26/2024,09/26/2025,Owner 477,(403) 712-8503,owner477@example.com,Contractor 36,711266,5000
+P-2025-00478,Sacramento,Yuba City,95502,In Progress,Mechanical,Panel upgrade,05/21/2025,05/21/2026,Owner 478,(218) 555-6765,owner478@example.com,Contractor 23,858506,8000
+P-2025-00479,Sacramento,Sacramento,95934,Issued,Electrical,Tear-off and replace roof,01/11/2025,01/11/2026,Owner 479,(768) 486-4695,owner479@example.com,Contractor 10,879194,15000
+P-2025-00480,Yuba,Colfax,95794,In Progress,Roofing,Kitchen remodel,10/23/2024,10/23/2025,Owner 480,(627) 446-3502,owner480@example.com,Contractor 28,863778,25000
+P-2025-00481,Placer,Rocklin,95768,In Progress,Plumbing,Foundation repair,04/09/2025,04/09/2026,Owner 481,(794) 754-4314,owner481@example.com,Contractor 9,862004,40000
+P-2025-00482,Yuba,Nevada City,95771,In Progress,Mechanical,Bathroom remodel,09/28/2024,09/28/2025,Owner 482,(525) 269-9732,owner482@example.com,Contractor 47,762069,8000
+P-2025-00483,Sacramento,Sacramento,95521,Finaled,Roofing,Tear-off and replace roof,04/15/2025,04/15/2026,Owner 483,(653) 963-5485,owner483@example.com,Contractor 10,798531,5000
+P-2025-00484,Sacramento,Rocklin,95710,In Progress,Roofing,Tear-off and replace roof,07/19/2025,07/19/2026,Owner 484,(436) 903-1427,owner484@example.com,Contractor 23,741668,40000
+P-2025-00485,Yuba,Lincoln,95288,Expired,Roofing,Foundation repair,01/23/2025,01/23/2026,Owner 485,(703) 685-3253,owner485@example.com,Contractor 11,801323,8000
+P-2025-00486,Sacramento,Sacramento,95327,In Progress,Plumbing,Tear-off and replace roof,09/08/2025,09/08/2026,Owner 486,(975) 409-2083,owner486@example.com,Contractor 12,930311,60000
+P-2025-00487,Yuba,Rocklin,95537,Expired,Plumbing,New HVAC install,11/13/2024,11/13/2025,Owner 487,(994) 242-7232,owner487@example.com,Contractor 47,864048,15000
+P-2025-00488,Nevada,Colfax,95211,Expired,Mechanical,Room addition,11/15/2024,11/15/2025,Owner 488,(667) 243-5025,owner488@example.com,Contractor 34,981998,15000
+P-2025-00489,Nevada,Rocklin,95398,Expired,Mechanical,Re-roof with shingles,09/04/2025,09/04/2026,Owner 489,(607) 511-5684,owner489@example.com,Contractor 30,787286,15000
+P-2025-00490,Placer,Yuba City,95949,Expired,Mechanical,Tear-off and replace roof,04/27/2025,04/27/2026,Owner 490,(292) 939-9202,owner490@example.com,Contractor 8,794251,60000
+P-2025-00491,Yuba,Sacramento,95431,Expired,Mechanical,Bathroom remodel,11/29/2024,11/29/2025,Owner 491,(225) 383-8433,owner491@example.com,Contractor 38,805870,15000
+P-2025-00492,Placer,Grass Valley,95193,Issued,Electrical,New HVAC install,08/09/2025,08/09/2026,Owner 492,(923) 660-6946,owner492@example.com,Contractor 6,974631,40000
+P-2025-00493,Placer,Sacramento,95663,Expired,Mechanical,Room addition,03/12/2025,03/12/2026,Owner 493,(244) 986-3799,owner493@example.com,Contractor 22,996480,60000
+P-2025-00494,Placer,Nevada City,95887,Issued,Roofing,Bathroom remodel,10/22/2024,10/22/2025,Owner 494,(629) 515-6071,owner494@example.com,Contractor 47,933967,12000
+P-2025-00495,Placer,Rocklin,95103,Finaled,Roofing,Kitchen remodel,11/08/2024,11/08/2025,Owner 495,(212) 669-9153,owner495@example.com,Contractor 32,984951,60000
+P-2025-00496,Placer,Rocklin,95702,Expired,Mechanical,Solar installation,09/22/2025,09/22/2026,Owner 496,(664) 619-8239,owner496@example.com,Contractor 6,703446,8000
+P-2025-00497,Placer,Auburn,95289,In Progress,Electrical,Room addition,12/18/2024,12/18/2025,Owner 497,(256) 868-6718,owner497@example.com,Contractor 3,776218,60000
+P-2025-00498,Sacramento,Lincoln,95189,Issued,Mechanical,Room addition,09/08/2025,09/08/2026,Owner 498,(311) 626-3920,owner498@example.com,Contractor 11,849097,25000
+P-2025-00499,Placer,Yuba City,95867,Finaled,Mechanical,Room addition,10/21/2024,10/21/2025,Owner 499,(236) 295-5903,owner499@example.com,Contractor 21,893236,15000
+P-2025-00500,Nevada,Roseville,95582,In Progress,Plumbing,Foundation repair,08/21/2025,08/21/2026,Owner 500,(324) 911-5496,owner500@example.com,Contractor 22,976327,15000
