@@ -157,37 +157,71 @@ else:
     st.info("Upload a CSV or Excel file to get started. Map columns once, and the app will auto-filter using your defaults.")
 
 
-    # PDF download
-    import io
-    from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
-    from reportlab.lib import colors
-    from reportlab.lib.pagesizes import letter
-    from reportlab.lib.styles import getSampleStyleSheet
+        # ===== 3) Download =====
+    st.subheader("3) Download")
 
-    pdf_buffer = io.BytesIO()
-    doc = SimpleDocTemplate(pdf_buffer, pagesize=letter)
-    styles = getSampleStyleSheet()
-
-    # Convert DataFrame to list of lists
-    data = [leads[display_cols].columns.tolist()] + leads[display_cols].astype(str).values.tolist()
-
-    # Create table
-    table = Table(data, repeatRows=1)
-    table.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f0f0f0")),
-        ("TEXTCOLOR", (0, 0), (-1, 0), colors.black),
-        ("ALIGN", (0, 0), (-1, -1), "LEFT"),
-        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-        ("FONTSIZE", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, 0), 6),
-        ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
-    ]))
-
-    doc.build([Paragraph("Permit Leads Report", styles["Title"]), table])
+    # CSV
+    csv_data = leads[display_cols].to_csv(index=False).encode("utf-8")
     st.download_button(
-        "⬇️ Download PDF",
-        data=pdf_buffer.getvalue(),
-        file_name="permit_leads.pdf",
-        mime="application/pdf",
+        "⬇️ Download CSV",
+        data=csv_data,
+        file_name="permit_leads.csv",
+        mime="text/csv",
     )
+
+    # Excel
+    import io
+    try:
+        buffer = io.BytesIO()
+        with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
+            leads[display_cols].to_excel(writer, index=False, sheet_name="Leads")
+            ws = writer.sheets["Leads"]
+            ws.autofilter(0, 0, leads[display_cols].shape[0], leads[display_cols].shape[1]-1)
+            ws.freeze_panes(1, 0)
+        st.download_button(
+            "⬇️ Download Excel",
+            data=buffer.getvalue(),
+            file_name="permit_leads.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        )
+    except Exception as e:
+        st.info("Excel export requires xlsxwriter. If this fails, use CSV or add xlsxwriter to requirements.")
+
+    # PDF
+    try:
+        from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+        from reportlab.lib import colors
+        from reportlab.lib.pagesizes import letter, landscape
+        from reportlab.lib.styles import getSampleStyleSheet
+
+        pdf_buffer = io.BytesIO()
+        doc = SimpleDocTemplate(pdf_buffer, pagesize=landscape(letter), leftMargin=18, rightMargin=18, topMargin=18, bottomMargin=18)
+        styles = getSampleStyleSheet()
+
+        # Title
+        elems = [Paragraph("Permit Leads (filtered)", styles["Title"]), Spacer(1, 6)]
+
+        # Table data (header + rows)
+        table_data = [leads[display_cols].columns.tolist()] + leads[display_cols].astype(str).values.tolist()
+        tbl = Table(table_data, repeatRows=1)
+        tbl.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#EEEEEE")),
+            ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+            ("FONTSIZE", (0, 0), (-1, -1), 8),
+            ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+            ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
+            ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.whitesmoke]),
+        ]))
+        elems.append(tbl)
+
+        doc.build(elems)
+        st.download_button(
+            "⬇️ Download PDF",
+            data=pdf_buffer.getvalue(),
+            file_name="permit_leads.pdf",
+            mime="application/pdf",
+        )
+    except Exception as e:
+        st.info("PDF export needs 'reportlab' in requirements.txt. Add it and redeploy.")
+
 
