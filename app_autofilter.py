@@ -169,7 +169,7 @@ else:
     styles = getSampleStyleSheet()
 
     # Convert DataFrame to list of lists
-    data = [list(leads[display_cols].columns)] + leads[display_cols].astype(str).values.tolist()
+    data = [leads[display_cols].columns.tolist()] + leads[display_cols].astype(str).values.tolist()
 
     # Create table
     table = Table(data, repeatRows=1)
