@@ -2,157 +2,198 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import io
-from datetime import datetime
+from datetime import date
+# --- page ---
+st.set_page_config(page_title="Permit Lead Finder", layout="wide")
 
-st.set_page_config(page_title="Permit Lead Finder — Auto Filter", layout="wide")
-
-# ========= DEFAULTS YOU CAN CHANGE =========
+# ===== Defaults you can tweak =====
 DEFAULT_MAX_MONTHS = 4
-DEFAULT_COUNTIES   = ["Nevada", "Placer", "Yuba", "Sacramento"]
 DEFAULT_STATUSES   = ["Issued", "In Progress"]
-EXCLUDE_ROOFING    = True
-# ==========================================
+ROOF_KEYWORDS      = ["roof", "re-roof", "reroof", "re roof", "roof repl", "roof mount"]
+# ==================================
 
-st.title("🏗️ Permit Lead Finder — Auto Filter")
-st.caption("Upload your public permit file, map columns once, and the app auto-filters to outreach-ready leads.")
+st.title("🏗️ Permit Lead Finder — PDF/CSV/XLSX")
+st.caption("Upload a county report (PDF/CSV/XLSX), tag the county, map columns, and get outreach leads + roofing summaries.")
 
-with st.expander("How this is set up", expanded=False):
-    st.markdown(
-        f"""
-        **Auto filters:**
-        - Months remaining ≤ **{DEFAULT_MAX_MONTHS}**
-        - County ∈ **{', '.join(DEFAULT_COUNTIES)}**
-        - Status ∈ **{', '.join(DEFAULT_STATUSES)}**
-        - Exclude roofing permits (type/description)
+# ------------------ Upload ------------------
+uploaded = st.file_uploader("Upload a CSV, Excel, or PDF file", type=["csv", "xlsx", "pdf"])
+county = st.selectbox("Select County for this file", ["Placer", "El Dorado", "Nevada", "Yuba", "Other"])
 
-        You can override all of these from the sidebar.
-        """
-    )
-
-uploaded = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx"])
-
-# Sidebar controls (optional overrides)
-st.sidebar.header("Filters (override defaults)")
-max_months = st.sidebar.number_input("Max months remaining", value=DEFAULT_MAX_MONTHS, min_value=0, max_value=60, step=1)
-target_counties = st.sidebar.text_input("Target counties (comma-separated)", value=", ".join(DEFAULT_COUNTIES))
-target_counties = [c.strip() for c in target_counties.split(",") if c.strip()]
-target_statuses = st.sidebar.text_input("Statuses to include (comma-separated)", value=", ".join(DEFAULT_STATUSES))
-target_statuses = [s.strip() for s in target_statuses.split(",") if s.strip()]
-exclude_roofing = st.sidebar.checkbox("Exclude roofing permits", value=EXCLUDE_ROOFING)
-
-def coerce_date(series):
-    return pd.to_datetime(series, errors="coerce", infer_datetime_format=True)
-
-def months_remaining(expire_dates: pd.Series) -> pd.Series:
-    today = pd.Timestamp.today().normalize()
-    m = (expire_dates.dt.year - today.year) * 12 + (expire_dates.dt.month - today.month)
-    day_adjust = (expire_dates.dt.day < today.day).astype(int)
-    return m - day_adjust
-
-# Early exit until a file is uploaded
 if uploaded is None:
-    st.info("Upload a CSV or Excel file to get started. (You can use the sidebar to set your defaults now.)")
+    st.info("Upload a file to begin.")
     st.stop()
 
-# ---------- Read file ----------
-if uploaded.name.lower().endswith(".csv"):
-    df = pd.read_csv(uploaded)
-else:
-    df = pd.read_excel(uploaded)
+# ------------------ Read file ------------------
+def read_any(uploaded):
+    name = uploaded.name.lower()
+    if name.endswith(".csv"):
+        return pd.read_csv(uploaded)
+    if name.endswith(".xlsx"):
+        return pd.read_excel(uploaded)
+    if name.endswith(".pdf"):
+        import pdfplumber
+        frames = []
+        with pdfplumber.open(uploaded) as pdf:
+            for p in pdf.pages:
+                for t in (p.extract_tables() or []):
+                    if not t or len(t) < 2:
+                        continue
+                    header = [("" if h is None else str(h).strip()) for h in t[0]]
+                    rows   = [[("" if c is None else str(c).strip()) for c in r] for r in t[1:]]
+                    if not any(header):
+                        continue
+                    frames.append(pd.DataFrame(rows, columns=header))
+        if not frames:
+            st.error("No tables found in the PDF. If it’s a scanned image, export CSV/XLSX from the county site.")
+            st.stop()
+        df = pd.concat(frames, ignore_index=True)
+        df.columns = [c.strip() for c in df.columns]
+        return df
+    st.error("Unsupported file type.")
+    st.stop()
 
-st.subheader("1) Map your columns")
+df = read_any(uploaded)
+df["County"] = county  # tag the whole file with the selected county
 
-cols = list(df.columns)
+# ------------------ Column mapping ------------------
+st.subheader("1) Map columns")
+cols = df.columns.tolist()
 
-def guess_index(keyword, fallback=0):
+def guess(cols, needle):
+    idx = 0
     for i, c in enumerate(cols):
-        if keyword in c.lower():
+        if needle in c.lower():
             return i
-    return fallback
+    return idx
 
-col_issue  = st.selectbox("Issue Date column", options=cols, index=guess_index("issue"))
-col_exp    = st.selectbox("Expiration Date column", options=cols, index=guess_index("exp"))
-col_desc   = st.selectbox("Project Description column (for roofing detection)", options=["(none)"] + cols, index=guess_index("desc")+1)
-col_county = st.selectbox("County column (optional)", options=["(none)"] + cols, index=guess_index("county")+1)
-col_city   = st.selectbox("City column (optional)", options=["(none)"] + cols, index=guess_index("city")+1)
-col_zip    = st.selectbox("ZIP column (optional)", options=["(none)"] + cols, index=guess_index("zip")+1)
-col_status = st.selectbox("Status column (optional)", options=["(none)"] + cols, index=guess_index("status")+1)
-col_type   = st.selectbox("Permit Type column (optional)", options=["(none)"] + cols, index=guess_index("type")+1)
+col_issue   = st.selectbox("Issue/Date Pulled", options=cols, index=guess(cols,"issue"))
+col_exp     = st.selectbox("Expiration Date", options=cols, index=guess(cols,"exp"))
+col_desc    = st.selectbox("Description", options=["(none)"]+cols, index=guess(cols,"desc")+1)
+col_type    = st.selectbox("Permit Type", options=["(none)"]+cols, index=guess(cols,"type")+1)
+col_status  = st.selectbox("Status", options=["(none)"]+cols, index=guess(cols,"status")+1)
+col_contr   = st.selectbox("Contractor / Applicant", options=["(none)"]+cols, index=guess(cols,"contract")+1)
+col_addr    = st.selectbox("Site Address", options=["(none)"]+cols, index=guess(cols,"address")+1)
+col_city    = st.selectbox("City (optional)", options=["(none)"]+cols, index=guess(cols,"city")+1)
+col_zip     = st.selectbox("ZIP (optional)", options=["(none)"]+cols, index=guess(cols,"zip")+1)
 
-# ---------- Helpers ----------
+# ------------------ Helpers ------------------
+to_dt = lambda s: pd.to_datetime(s, errors="coerce", infer_datetime_format=True)
 work = df.copy()
-work["_issue_dt"] = coerce_date(work[col_issue])
-work["_exp_dt"]   = coerce_date(work[col_exp])
+work["_issue_dt"] = to_dt(work[col_issue])
+work["_exp_dt"]   = to_dt(work[col_exp])
+
+def months_remaining(exp):
+    today = pd.Timestamp.today().normalize()
+    m = (exp.dt.year - today.year)*12 + (exp.dt.month - today.month)
+    adj = (exp.dt.day < today.day).astype(int)
+    return m - adj
+
 work["_months_remaining"] = months_remaining(work["_exp_dt"])
 
-if col_desc != "(none)":
-    work["_roofing_related"] = work[col_desc].astype(str).str.contains("roof", case=False, na=False)
-else:
-    work["_roofing_related"] = False
+def has_roof(x: str) -> bool:
+    s = str(x).lower()
+    return any(k in s for k in ROOF_KEYWORDS)
 
-# ---------- Auto apply filters ----------
+work["_is_roofing"] = False
+if col_desc != "(none)":
+    work["_is_roofing"] |= work[col_desc].apply(has_roof)
+if col_type != "(none)":
+    work["_is_roofing"] |= work[col_type].apply(has_roof)
+
+# ------------------ Filters ------------------
+st.subheader("2) Filters")
+max_months = st.number_input("Max months remaining (leads view)", value=DEFAULT_MAX_MONTHS, min_value=0, max_value=60)
+
+# status filter (optional)
+status_vals = sorted(work[col_status].dropna().astype(str).unique()) if col_status!="(none)" else []
+pick_status = st.multiselect("Statuses to include (optional)", status_vals,
+                             default=[s for s in DEFAULT_STATUSES if s in status_vals] if status_vals else [])
+
+exclude_roof = st.checkbox("Exclude roofing permits from leads", value=True)
+
 mask = pd.Series(True, index=work.index)
 mask &= (work["_months_remaining"] <= max_months)
-
-if col_status != "(none)" and len(target_statuses) > 0:
-    mask &= work[col_status].astype(str).isin(target_statuses)
-
-if col_county != "(none)" and len(target_counties) > 0:
-    mask &= work[col_county].astype(str).isin(target_counties)
-elif col_city != "(none)" and len(target_counties) > 0:
-    mask &= work[col_city].astype(str).isin(target_counties)
-elif col_zip != "(none)" and len(target_counties) > 0:
-    mask &= work[col_zip].astype(str).isin(target_counties)
-
-if exclude_roofing:
-    type_is_roof = False
-    if col_type != "(none)":
-        type_is_roof = work[col_type].astype(str).str.contains("roof", case=False, na=False)
-    mask &= ~(work["_roofing_related"] | type_is_roof)
+if pick_status:
+    mask &= work[col_status].astype(str).isin(pick_status)
+if exclude_roof:
+    mask &= ~work["_is_roofing"]
 
 leads = work.loc[mask].copy()
 
-st.subheader("2) Results (auto-filtered)")
-st.caption(f"Showing {len(leads):,} of {len(work):,} rows after filters.")
+# Nice columns to show
+lead_cols = []
+for c in ["County", col_issue, col_exp, col_contr, col_addr, col_city, col_zip, col_status, col_type, col_desc]:
+    if c != "(none)" and c in leads.columns and c not in lead_cols:
+        lead_cols.append(c)
+lead_cols += [c for c in leads.columns if c not in lead_cols and not c.startswith("_")]
 
-# Choose columns to display first
-display_cols = []
-for key in ["Permit #","Owner Name","County","City","ZIP","Status","Permit Type","Project Description","Issue Date","Expiration Date"]:
-    if key in leads.columns:
-        display_cols.append(key)
-display_cols += [c for c in leads.columns if c not in display_cols and not c.startswith("_")]
+st.subheader("3) Leads (auto-filtered)")
+st.caption(f"{len(leads):,} of {len(work):,} rows after filters.")
+st.dataframe(leads[lead_cols], use_container_width=True, hide_index=True)
 
-show_helpers = st.toggle("Show helper columns (months remaining / roofing detected)", value=False)
-if show_helpers:
-    display_cols += ["_months_remaining","_roofing_related"]
+# ------------------ Roofing summary (what he asked) ------------------
+st.subheader("4) Roofing activity summary")
+gran = st.radio("Group by", ["Month","Week"], horizontal=True)
 
-if len(leads) == 0:
-    st.warning("No rows matched your filters. Try widening months, statuses, or county list.")
+# choose date range based on issue date
+min_d = pd.to_datetime(work["_issue_dt"].min()).date() if work["_issue_dt"].notna().any() else date.today()
+max_d = pd.to_datetime(work["_issue_dt"].max()).date() if work["_issue_dt"].notna().any() else date.today()
+start, end = st.date_input("Date pulled range", value=(max(min_d, max_d.replace(day=1)), max_d))
+
+in_range = work[(work["_issue_dt"] >= pd.Timestamp(start)) & (work["_issue_dt"] <= pd.Timestamp(end))]
+roof = in_range[in_range["_is_roofing"]].copy()
+
+c1, c2, c3 = st.columns(3)
+c1.metric("Permits in range", f"{len(in_range):,}")
+c2.metric("Roofing permits", f"{len(roof):,}")
+c3.metric("Roofing contractors",
+          f"{roof[col_contr].nunique():,}" if col_contr!="(none)" and col_contr in roof.columns else "—")
+
+# group by period
+if gran == "Month":
+    roof["_period"] = roof["_issue_dt"].dt.to_period("M").dt.to_timestamp()
 else:
-    st.dataframe(leads[display_cols], use_container_width=True, hide_index=True)
+    roof["_period"] = roof["_issue_dt"].dt.to_period("W").dt.start_time
 
-# ---------- Downloads ----------
-st.subheader("3) Download")
+by_period = roof.groupby("_period").size().reset_index(name="Re-roof count")
+st.write(f"**Re-roof permits by {gran.lower()}**")
+st.bar_chart(by_period.set_index("_period"))
 
-# CSV
-csv_data = leads[display_cols].to_csv(index=False).encode("utf-8")
-st.download_button("⬇️ Download CSV", data=csv_data, file_name="permit_leads.csv", mime="text/csv")
+# top roofing contractors + addresses table
+if col_contr != "(none)" and col_contr in roof.columns:
+    top_con = roof.groupby(col_contr, dropna=False).size().sort_values(ascending=False).reset_index(name="Count")
+    st.write("**Top roofing contractors in range**")
+    st.dataframe(top_con.head(20), hide_index=True, use_container_width=True)
 
-# Excel
+detail_cols = [c for c in [col_contr, col_addr, col_city, col_zip, col_issue, col_type, col_desc] if c!="(none)" and c in roof.columns]
+st.write("**Reroof details (who pulled it & site address)**")
+st.dataframe(roof[detail_cols] if detail_cols else roof, hide_index=True, use_container_width=True)
+
+# ------------------ Downloads ------------------
+st.subheader("5) Download")
+
+# Leads CSV
+csv_leads = leads[lead_cols].to_csv(index=False).encode("utf-8")
+st.download_button("⬇️ Download Leads (CSV)", data=csv_leads, file_name="permit_leads.csv", mime="text/csv")
+
+# Excel (Leads + Summary sheets)
 try:
     buffer = io.BytesIO()
-    with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
-        leads[display_cols].to_excel(writer, index=False, sheet_name="Leads")
-        ws = writer.sheets["Leads"]
-        ws.autofilter(0, 0, leads[display_cols].shape[0], leads[display_cols].shape[1]-1)
-        ws.freeze_panes(1, 0)
-    st.download_button("⬇️ Download Excel", data=buffer.getvalue(),
-                       file_name="permit_leads.xlsx",
-                       mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-except Exception as e:
-    st.info("Excel export needs xlsxwriter. If this fails, use CSV or add xlsxwriter to requirements.")
+    with pd.ExcelWriter(buffer, engine="xlsxwriter") as w:
+        leads[lead_cols].to_excel(w, index=False, sheet_name="Leads")
+        by_period.to_excel(w, index=False, sheet_name=f"Roof_By_{gran}")
+        if col_contr!="(none)" and col_contr in roof.columns:
+            top_con.to_excel(w, index=False, sheet_name="Top_Roof_Contractors")
+        (roof[detail_cols] if detail_cols else roof).to_excel(w, index=False, sheet_name="Roof_Detail")
+        for ws in w.sheets.values(): ws.freeze_panes(1,0)
+    st.download_button("⬇️ Download Excel (Leads + Summary)",
+        data=buffer.getvalue(),
+        file_name="permit_leads_summary.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+except Exception:
+    st.info("Excel export needs xlsxwriter (already in requirements).")
 
-# PDF
+# PDF summary
 try:
     from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
     from reportlab.lib import colors
@@ -160,29 +201,43 @@ try:
     from reportlab.lib.styles import getSampleStyleSheet
 
     pdf_buffer = io.BytesIO()
-    doc = SimpleDocTemplate(pdf_buffer, pagesize=landscape(letter), leftMargin=18, rightMargin=18, topMargin=18, bottomMargin=18)
+    doc = SimpleDocTemplate(pdf_buffer, pagesize=landscape(letter),
+                            leftMargin=18, rightMargin=18, topMargin=18, bottomMargin=18)
     styles = getSampleStyleSheet()
 
-    elems = [Paragraph("Permit Leads (filtered)", styles["Title"]), Spacer(1, 6)]
-    table_data = [leads[display_cols].columns.tolist()] + leads[display_cols].astype(str).values.tolist()
-    tbl = Table(table_data, repeatRows=1)
+    elems = [
+        Paragraph("Permit Leads — Summary", styles["Title"]),
+        Paragraph(f"County: {county} | Leads: {len(leads):,} | Range: {start} → {end}", styles["Normal"]),
+        Spacer(1, 8),
+    ]
+    # compact leads snapshot (first 10 cols to fit)
+    cols_pdf = lead_cols[:10]
+    td = [leads[cols_pdf].columns.tolist()] + leads[cols_pdf].astype(str).values.tolist()
+    tbl = Table(td, repeatRows=1)
     tbl.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#EEEEEE")),
-        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-        ("FONTSIZE", (0, 0), (-1, -1), 8),
-        ("ALIGN", (0, 0), (-1, -1), "LEFT"),
-        ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
-        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.whitesmoke]),
+        ("BACKGROUND", (0,0), (-1,0), colors.HexColor("#EEEEEE")),
+        ("FONTNAME", (0,0), (-1,0), "Helvetica-Bold"),
+        ("FONTSIZE", (0,0), (-1,-1), 8),
+        ("ALIGN", (0,0), (-1,-1), "LEFT"),
+        ("GRID", (0,0), (-1,-1), 0.25, colors.grey),
+        ("ROWBACKGROUNDS", (0,1), (-1,-1), [colors.white, colors.whitesmoke]),
     ]))
-    elems.append(tbl)
+    elems += [Paragraph("Leads (snapshot)", styles["Heading2"]), tbl, Spacer(1,8)]
+
+    # top contractors
+    if col_contr!="(none)" and col_contr in roof.columns:
+        td2 = [top_con.columns.tolist()] + top_con.astype(str).values.tolist()
+        tbl2 = Table(td2, repeatRows=1)
+        tbl2.setStyle(TableStyle([
+            ("BACKGROUND",(0,0),(-1,0),colors.HexColor("#EEEEEE")),
+            ("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),
+            ("FONTSIZE",(0,0),(-1,-1),8),
+            ("GRID",(0,0),(-1,-1),0.25,colors.grey),
+        ]))
+        elems += [Paragraph("Top Roofing Contractors", styles["Heading2"]), tbl2]
+
     doc.build(elems)
-
-    st.download_button("⬇️ Download PDF",
-                       data=pdf_buffer.getvalue(),
-                       file_name="permit_leads.pdf",
-                       mime="application/pdf")
+    st.download_button("⬇️ Download PDF (summary)", data=pdf_buffer.getvalue(),
+                       file_name="permit_summary.pdf", mime="application/pdf")
 except Exception:
-    st.info("PDF export needs 'reportlab' in requirements.txt. Add it if the button doesn't appear.")
-
-
-
+    st.info("PDF export needs 'reportlab' in requirements.")
